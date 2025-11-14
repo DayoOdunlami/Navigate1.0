@@ -1,0 +1,512 @@
+[
+  {
+    "id": "org-dft-001",
+    "name": "Department for Transport",
+    "type": "Government",
+    "sector": "Transport",
+    "funding_capacity": "High",
+    "location": {
+      "city": "London",
+      "region": "London",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.gov.uk/dft",
+      "email": "public.enquiries@dft.gov.uk"
+    },
+    "description": "UK government department responsible for transport strategy and policy",
+    "tags": [
+      "policy",
+      "funding",
+      "infrastructure",
+      "aviation"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "capacity_scenarios": {
+      "optimistic": 150000000,
+      "conservative": 80000000,
+      "current": 125000000
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "knowledge_base": {
+      "content": "# Strategic Position\nThe Department for Transport (DfT) is the UK government's lead department for transport policy. In zero emission aviation, DfT plays a critical role in setting policy frameworks, allocating funding, and coordinating cross-sector initiatives.\n\n## Key Responsibilities\n- Setting UK aviation decarbonization targets (net zero by 2050)\n- Managing funding programs through intermediaries (ATI, Innovate UK)\n- Coordinating with CAA on regulatory frameworks\n- International collaboration (ICAO, EU)\n\n## Funding Strategy\nDfT allocates approximately £125M annually to zero emission aviation through:\n- ATI Programme (primary channel)\n- Future Flight Challenge\n- Direct grants to strategic projects\n\n## Strategic Priorities\n1. Hydrogen aviation infrastructure\n2. Battery-electric for short-haul\n3. Sustainable aviation fuels (SAF)\n4. Regulatory framework development\n\n## Key Milestones\n- 2019: Jet Zero Strategy launched\n- 2021: ATI Programme expanded\n- 2023: Hydrogen infrastructure roadmap published\n- 2024: Certification standards working group established",
+      "sources": [
+        {
+          "title": "Jet Zero Strategy",
+          "url": "https://www.gov.uk/jet-zero",
+          "date": "2021-07-19",
+          "type": "report"
+        },
+        {
+          "title": "DfT Annual Report 2024",
+          "url": "https://www.gov.uk/dft",
+          "date": "2024-03-15",
+          "type": "report"
+        }
+      ],
+      "last_updated": "2025-11-14T12:42:32.064Z",
+      "contributors": [
+        "admin"
+      ],
+      "tags": [
+        "strategic",
+        "policy",
+        "funding"
+      ],
+      "confidence": "verified"
+    },
+    "total_funding_received": 0,
+    "total_funding_provided": 35000000,
+    "relationship_count": 1
+  },
+  {
+    "id": "org-ukri-001",
+    "name": "UK Research and Innovation",
+    "type": "Government",
+    "sector": "Research",
+    "funding_capacity": "High",
+    "location": {
+      "city": "Swindon",
+      "region": "South West",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.ukri.org"
+    },
+    "description": "UKRI funds and supports research and innovation across all sectors",
+    "tags": [
+      "research",
+      "funding",
+      "innovation"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 0,
+    "total_funding_provided": 6200000,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-beis-001",
+    "name": "Department for Business, Energy & Industrial Strategy",
+    "type": "Government",
+    "sector": "Energy",
+    "funding_capacity": "High",
+    "location": {
+      "city": "London",
+      "region": "London",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.gov.uk/beis"
+    },
+    "description": "Government department supporting business, energy, and industrial strategy",
+    "tags": [
+      "policy",
+      "energy",
+      "industrial-strategy"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 0,
+    "total_funding_provided": 0,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-ati-001",
+    "name": "Aerospace Technology Institute",
+    "type": "Intermediary",
+    "sector": "Aerospace",
+    "funding_capacity": "High",
+    "location": {
+      "city": "Cranfield",
+      "region": "East of England",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.ati.org.uk",
+      "email": "info@ati.org.uk"
+    },
+    "description": "UK's national institute for aerospace research and technology development",
+    "tags": [
+      "intermediary",
+      "funding",
+      "research",
+      "aviation"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "knowledge_base": {
+      "content": "# Strategic Position\nThe Aerospace Technology Institute (ATI) is the UK's primary intermediary for aerospace R&D funding, managing government investment in zero emission aviation technologies.\n\n## Role\nATI distributes DfT funding to industry and research organizations, focusing on:\n- Technology readiness advancement (TRL 3-7)\n- Collaborative R&D programs\n- Industry-academia partnerships\n\n## Funding Programs\n- ATI Programme (main channel)\n- Future Flight Challenge\n- Collaborative R&D competitions\n\n## Key Relationships\n- Primary funder: DfT\n- Key recipients: ZeroAvia, Rolls-Royce, universities\n- Strategic partner: Innovate UK",
+      "sources": [
+        {
+          "title": "ATI Annual Report 2024",
+          "url": "https://www.ati.org.uk",
+          "date": "2024-06-01",
+          "type": "report"
+        }
+      ],
+      "last_updated": "2025-11-14T12:42:32.064Z",
+      "contributors": [
+        "admin"
+      ],
+      "tags": [
+        "strategic",
+        "funding",
+        "intermediary"
+      ],
+      "confidence": "verified"
+    },
+    "total_funding_received": 35000000,
+    "total_funding_provided": 23000000,
+    "relationship_count": 2
+  },
+  {
+    "id": "org-innovate-uk-001",
+    "name": "Innovate UK",
+    "type": "Intermediary",
+    "sector": "Research",
+    "funding_capacity": "High",
+    "location": {
+      "city": "Swindon",
+      "region": "South West",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.ukri.org/councils/innovate-uk/"
+    },
+    "description": "UK's innovation agency, part of UKRI",
+    "tags": [
+      "intermediary",
+      "funding",
+      "innovation"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 0,
+    "total_funding_provided": 3000000,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-cranfield-001",
+    "name": "Cranfield University",
+    "type": "Research",
+    "sector": "Aerospace",
+    "funding_capacity": "Medium",
+    "location": {
+      "city": "Cranfield",
+      "region": "East of England",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.cranfield.ac.uk",
+      "email": "aviation@cranfield.ac.uk"
+    },
+    "description": "Leading UK university for aerospace research and education",
+    "tags": [
+      "university",
+      "research",
+      "fuel-cells",
+      "hydrogen"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 5000000,
+    "total_funding_provided": 0,
+    "relationship_count": 1
+  },
+  {
+    "id": "org-bristol-001",
+    "name": "University of Bristol",
+    "type": "Research",
+    "sector": "Aerospace",
+    "funding_capacity": "Medium",
+    "location": {
+      "city": "Bristol",
+      "region": "South West",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.bristol.ac.uk"
+    },
+    "description": "Research university with strong aerospace engineering programs",
+    "tags": [
+      "university",
+      "research",
+      "aircraft-design"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 1200000,
+    "total_funding_provided": 0,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-manchester-001",
+    "name": "University of Manchester",
+    "type": "Research",
+    "sector": "Energy",
+    "funding_capacity": "Medium",
+    "location": {
+      "city": "Manchester",
+      "region": "North West",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.manchester.ac.uk"
+    },
+    "description": "Research university with hydrogen production expertise",
+    "tags": [
+      "university",
+      "research",
+      "hydrogen-production"
+    ],
+    "data_quality": {
+      "confidence": "estimated",
+      "last_verified": "2024-11-14T12:42:32.067Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 0,
+    "total_funding_provided": 0,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-zeroavia-001",
+    "name": "ZeroAvia",
+    "type": "Industry",
+    "sector": "Aviation",
+    "funding_capacity": "High",
+    "location": {
+      "city": "Hollister",
+      "region": "California",
+      "country": "International"
+    },
+    "contact": {
+      "website": "https://www.zeroavia.com",
+      "email": "info@zeroavia.com"
+    },
+    "description": "Leading developer of hydrogen-electric powertrains for regional aircraft",
+    "tags": [
+      "hydrogen",
+      "aircraft",
+      "TRL-7",
+      "fuel-cells"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "knowledge_base": {
+      "content": "# Strategic Position\nZeroAvia is positioning itself as the leader in hydrogen-electric powertrains for regional aircraft. Unlike competitors focusing on battery-electric, their bet is that hydrogen offers better range/weight ratio for 10-80 seat aircraft.\n\n## Key Milestones\n- 2020: First hydrogen fuel cell flight (6-seater)\n- 2023: 19-seater ground testing completed\n- Target 2025: Certification for commercial ops\n\n## Strategic Partnerships\nStrong relationship with **British Airways** (LOI for 10-50 aircraft) signals commercial viability pathway. Partnership with **Mitsubishi** provides access to Asian markets and manufacturing scale.\n\n## Technical Approach\nUsing PEM fuel cells (not alkaline) due to faster start-up times and better power density. Current challenge is hydrogen storage - testing both compressed (350 bar) and liquid options.\n\n## Regulatory Path\nWorking closely with CAA (UK) and EASA on certification. Major blocker: no existing certification standards for hydrogen powertrains in aviation. Pioneering the regulatory framework itself.\n\n## Risk Factors\n- Dependent on hydrogen infrastructure at airports (chicken-egg problem)\n- Competition from Airbus (Zeroe program) with deeper pockets\n- Certification timeline uncertain (3-5 year range)\n\n## Funding\nTotal funding: £45M\n- Public: £35M (primarily through ATI)\n- Private: £10M (Series C)",
+      "sources": [
+        {
+          "title": "Series C Funding Round",
+          "url": "https://techcrunch.com/zeroavia-series-c",
+          "date": "2024-01-15",
+          "type": "news"
+        },
+        {
+          "title": "ATI Progress Review Meeting",
+          "url": "internal://meetings/2024-03-15",
+          "date": "2024-03-15",
+          "type": "internal_doc"
+        }
+      ],
+      "last_updated": "2025-11-14T12:42:32.064Z",
+      "contributors": [
+        "admin"
+      ],
+      "tags": [
+        "strategic-assessment",
+        "risk-analysis",
+        "regulatory"
+      ],
+      "confidence": "verified"
+    },
+    "total_funding_received": 25000000,
+    "total_funding_provided": 0,
+    "relationship_count": 5
+  },
+  {
+    "id": "org-rolls-royce-001",
+    "name": "Rolls-Royce",
+    "type": "Industry",
+    "sector": "Aerospace",
+    "funding_capacity": "High",
+    "location": {
+      "city": "Derby",
+      "region": "East Midlands",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.rolls-royce.com"
+    },
+    "description": "Major aerospace manufacturer developing hydrogen propulsion systems",
+    "tags": [
+      "hydrogen",
+      "aircraft",
+      "TRL-6",
+      "engines"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 8000000,
+    "total_funding_provided": 0,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-airbus-001",
+    "name": "Airbus",
+    "type": "Industry",
+    "sector": "Aerospace",
+    "funding_capacity": "High",
+    "location": {
+      "city": "Toulouse",
+      "region": "Occitanie",
+      "country": "International"
+    },
+    "contact": {
+      "website": "https://www.airbus.com"
+    },
+    "description": "Major aircraft manufacturer with Zeroe hydrogen aircraft program",
+    "tags": [
+      "hydrogen",
+      "aircraft",
+      "TRL-5",
+      "zeroe"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 0,
+    "total_funding_provided": 0,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-itm-power-001",
+    "name": "ITM Power",
+    "type": "Industry",
+    "sector": "Energy",
+    "funding_capacity": "Medium",
+    "location": {
+      "city": "Sheffield",
+      "region": "Yorkshire",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.itm-power.com"
+    },
+    "description": "Leading UK manufacturer of electrolysers for green hydrogen production",
+    "tags": [
+      "hydrogen-production",
+      "electrolysis",
+      "TRL-8"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 3000000,
+    "total_funding_provided": 0,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-linde-001",
+    "name": "Linde",
+    "type": "Industry",
+    "sector": "Energy",
+    "funding_capacity": "High",
+    "location": {
+      "city": "Guildford",
+      "region": "South East",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.linde.com"
+    },
+    "description": "Global industrial gases company, leader in hydrogen infrastructure",
+    "tags": [
+      "hydrogen-storage",
+      "infrastructure",
+      "TRL-9"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 0,
+    "total_funding_provided": 0,
+    "relationship_count": 0
+  },
+  {
+    "id": "org-british-airways-001",
+    "name": "British Airways",
+    "type": "Industry",
+    "sector": "Aviation",
+    "funding_capacity": "High",
+    "location": {
+      "city": "London",
+      "region": "London",
+      "country": "UK"
+    },
+    "contact": {
+      "website": "https://www.britishairways.com"
+    },
+    "description": "UK flag carrier airline, committed to net zero by 2050",
+    "tags": [
+      "airline",
+      "operator",
+      "customer"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding_received": 0,
+    "total_funding_provided": 10000000,
+    "relationship_count": 1
+  }
+]

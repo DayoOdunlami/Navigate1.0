@@ -1,0 +1,174 @@
+[
+  {
+    "id": "fund-001",
+    "amount": 35000000,
+    "currency": "GBP",
+    "funding_type": "Public",
+    "source_id": "org-dft-001",
+    "recipient_id": "org-ati-001",
+    "recipient_type": "stakeholder",
+    "program": "ATI Programme - Core Funding",
+    "program_type": "grant",
+    "date": "2023-01-01",
+    "start_date": "2023-01-01",
+    "end_date": "2025-12-31",
+    "status": "Active",
+    "impact_description": "Core funding for ATI to distribute to zero emission aviation projects",
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "fund-002",
+    "amount": 15000000,
+    "currency": "GBP",
+    "funding_type": "Public",
+    "source_id": "org-ati-001",
+    "recipient_id": "org-zeroavia-001",
+    "recipient_type": "stakeholder",
+    "program": "ATI Programme - Round 3",
+    "program_type": "grant",
+    "date": "2023-06-15",
+    "start_date": "2023-06-15",
+    "end_date": "2025-06-14",
+    "status": "Active",
+    "impact_description": "Enabling flight testing of 19-seat hydrogen-electric aircraft",
+    "technologies_supported": [
+      "tech-aircraft-regional-h2-001",
+      "tech-fuel-cell-pem-001"
+    ],
+    "trl_impact": {
+      "before": 5,
+      "after": 7
+    },
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "fund-003",
+    "amount": 10000000,
+    "currency": "GBP",
+    "funding_type": "Private",
+    "source_id": "org-british-airways-001",
+    "recipient_id": "org-zeroavia-001",
+    "recipient_type": "stakeholder",
+    "program": "Strategic Partnership",
+    "program_type": "partnership",
+    "date": "2024-01-20",
+    "status": "Active",
+    "impact_description": "Strategic partnership for future aircraft orders",
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2024-11-14T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "fund-004",
+    "amount": 5000000,
+    "currency": "GBP",
+    "funding_type": "Public",
+    "source_id": "org-ukri-001",
+    "recipient_id": "org-cranfield-001",
+    "recipient_type": "stakeholder",
+    "program": "Future Flight Challenge",
+    "program_type": "grant",
+    "date": "2023-03-10",
+    "status": "Active",
+    "impact_description": "Research into fuel cell optimization for aviation",
+    "technologies_supported": [
+      "tech-fuel-cell-pem-001"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "fund-005",
+    "amount": 8000000,
+    "currency": "GBP",
+    "funding_type": "Public",
+    "source_id": "org-ati-001",
+    "recipient_id": "org-rolls-royce-001",
+    "recipient_type": "stakeholder",
+    "program": "ATI Programme - Round 2",
+    "program_type": "grant",
+    "date": "2022-09-01",
+    "status": "Completed",
+    "impact_description": "Development of hydrogen combustion engine technology",
+    "technologies_supported": [
+      "tech-aircraft-regional-h2-001"
+    ],
+    "trl_impact": {
+      "before": 4,
+      "after": 6
+    },
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "fund-006",
+    "amount": 3000000,
+    "currency": "GBP",
+    "funding_type": "Public",
+    "source_id": "org-innovate-uk-001",
+    "recipient_id": "org-itm-power-001",
+    "recipient_type": "stakeholder",
+    "program": "SBRI - Hydrogen Production",
+    "program_type": "SBRI",
+    "date": "2023-11-05",
+    "status": "Active",
+    "impact_description": "Development of high-efficiency electrolysers for aviation use",
+    "technologies_supported": [
+      "tech-h2-electrolysis-001"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2024-11-14T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "fund-007",
+    "amount": 1200000,
+    "currency": "GBP",
+    "funding_type": "Public",
+    "source_id": "org-ukri-001",
+    "recipient_id": "org-bristol-001",
+    "recipient_type": "stakeholder",
+    "program": "EPSRC Research Grant",
+    "program_type": "grant",
+    "date": "2023-08-15",
+    "status": "Active",
+    "impact_description": "Research into liquid hydrogen storage systems",
+    "technologies_supported": [
+      "tech-h2-storage-liquid-001"
+    ],
+    "trl_impact": {
+      "before": 5,
+      "after": 6
+    },
+    "data_quality": {
+      "confidence": "estimated",
+      "last_verified": "2024-11-14T12:42:32.067Z"
+    },
+    "created_at": "2024-11-14T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  }
+]

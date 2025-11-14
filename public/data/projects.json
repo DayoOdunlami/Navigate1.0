@@ -1,0 +1,90 @@
+[
+  {
+    "id": "proj-zeroavia-h2-flight-001",
+    "name": "ZeroAvia 19-Seat Hydrogen Flight Testing",
+    "status": "Active",
+    "start_date": "2023-06-15",
+    "end_date": "2025-06-14",
+    "duration_months": 24,
+    "participants": [
+      "org-zeroavia-001",
+      "org-ati-001",
+      "org-cranfield-001"
+    ],
+    "lead_organization": "org-zeroavia-001",
+    "technologies": [
+      "tech-aircraft-regional-h2-001",
+      "tech-fuel-cell-pem-001",
+      "tech-h2-storage-compressed-001"
+    ],
+    "primary_technology": "tech-aircraft-regional-h2-001",
+    "total_budget": 15000000,
+    "funding_events": [
+      "fund-002"
+    ],
+    "description": "Flight testing program for 19-seat hydrogen-electric aircraft",
+    "objectives": [
+      "Complete 100+ flight hours",
+      "Achieve TRL 7 for powertrain",
+      "Validate safety and performance",
+      "Prepare for certification"
+    ],
+    "tags": [
+      "flight-testing",
+      "certification",
+      "hydrogen"
+    ],
+    "outcomes": {
+      "trl_advancement": 2,
+      "publications": 3,
+      "commercial_impact": "LOI from British Airways for 10-50 aircraft"
+    },
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "proj-rolls-royce-h2-engine-001",
+    "name": "Rolls-Royce Hydrogen Combustion Engine",
+    "status": "Active",
+    "start_date": "2022-09-01",
+    "end_date": "2024-12-31",
+    "duration_months": 28,
+    "participants": [
+      "org-rolls-royce-001",
+      "org-ati-001",
+      "org-manchester-001"
+    ],
+    "lead_organization": "org-rolls-royce-001",
+    "technologies": [
+      "tech-aircraft-regional-h2-001"
+    ],
+    "primary_technology": "tech-aircraft-regional-h2-001",
+    "total_budget": 8000000,
+    "funding_events": [
+      "fund-005"
+    ],
+    "description": "Development of hydrogen combustion engine for regional aircraft",
+    "objectives": [
+      "Develop engine prototype",
+      "Ground testing",
+      "TRL advancement to 6"
+    ],
+    "tags": [
+      "engine",
+      "hydrogen-combustion"
+    ],
+    "outcomes": {
+      "trl_advancement": 2
+    },
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  }
+]

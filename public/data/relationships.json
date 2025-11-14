@@ -1,0 +1,93 @@
+[
+  {
+    "id": "rel-dft-ati-001",
+    "source": "org-dft-001",
+    "target": "org-ati-001",
+    "type": "funds",
+    "weight": 35000000,
+    "strength": "strong",
+    "metadata": {
+      "amount": 35000000,
+      "program": "ATI Programme",
+      "start_date": "2023-01-01",
+      "end_date": "2025-12-31"
+    },
+    "bidirectional": false,
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "rel-ati-zeroavia-001",
+    "source": "org-ati-001",
+    "target": "org-zeroavia-001",
+    "type": "funds",
+    "weight": 15000000,
+    "strength": "strong",
+    "metadata": {
+      "amount": 15000000,
+      "program": "ATI Round 3",
+      "project_id": "proj-zeroavia-h2-flight-001"
+    },
+    "bidirectional": false,
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "rel-ba-zeroavia-001",
+    "source": "org-british-airways-001",
+    "target": "org-zeroavia-001",
+    "type": "collaborates_with",
+    "weight": 0.8,
+    "strength": "strong",
+    "metadata": {
+      "description": "Strategic partnership with LOI for aircraft orders"
+    },
+    "bidirectional": true,
+    "created_at": "2024-11-14T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "rel-zeroavia-cranfield-001",
+    "source": "org-zeroavia-001",
+    "target": "org-cranfield-001",
+    "type": "collaborates_with",
+    "weight": 0.6,
+    "strength": "medium",
+    "metadata": {
+      "project_id": "proj-zeroavia-h2-flight-001",
+      "description": "Research collaboration on fuel cell optimization"
+    },
+    "bidirectional": true,
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "rel-zeroavia-tech-aircraft-001",
+    "source": "org-zeroavia-001",
+    "target": "tech-aircraft-regional-h2-001",
+    "type": "advances",
+    "weight": 0.9,
+    "strength": "strong",
+    "metadata": {
+      "project_id": "proj-zeroavia-h2-flight-001",
+      "description": "Primary developer of regional hydrogen aircraft"
+    },
+    "bidirectional": false,
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  },
+  {
+    "id": "rel-zeroavia-tech-fuelcell-001",
+    "source": "org-zeroavia-001",
+    "target": "tech-fuel-cell-pem-001",
+    "type": "advances",
+    "weight": 0.8,
+    "strength": "strong",
+    "metadata": {
+      "description": "Using PEM fuel cells in aircraft"
+    },
+    "bidirectional": false,
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z"
+  }
+]

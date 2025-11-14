@@ -1,0 +1,286 @@
+[
+  {
+    "id": "tech-h2-electrolysis-001",
+    "name": "Green Hydrogen Electrolysis",
+    "category": "H2Production",
+    "trl_current": 8,
+    "trl_color": "green",
+    "maturity_risk": "Proven technology / Scale-up challenges / Cost reduction needed",
+    "deployment_ready": true,
+    "description": "Electrolysis systems for producing green hydrogen from renewable electricity",
+    "tags": [
+      "hydrogen-production",
+      "electrolysis",
+      "green-energy"
+    ],
+    "regional_availability": [
+      "Scotland",
+      "South East",
+      "Yorkshire"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 3000000,
+    "funding_by_type": {
+      "public": 3000000,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 0,
+    "project_count": 0
+  },
+  {
+    "id": "tech-h2-reforming-001",
+    "name": "Steam Methane Reforming with CCS",
+    "category": "H2Production",
+    "trl_current": 7,
+    "trl_color": "green",
+    "maturity_risk": "Proven / CCS integration / Cost",
+    "deployment_ready": true,
+    "description": "Blue hydrogen production with carbon capture and storage",
+    "tags": [
+      "hydrogen-production",
+      "CCS",
+      "blue-hydrogen"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 0,
+    "funding_by_type": {
+      "public": 0,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 0,
+    "project_count": 0
+  },
+  {
+    "id": "tech-h2-storage-compressed-001",
+    "name": "Compressed Hydrogen Storage (350 bar)",
+    "category": "H2Storage",
+    "trl_current": 8,
+    "trl_color": "green",
+    "maturity_risk": "Proven / Weight constraints / Volume efficiency",
+    "deployment_ready": true,
+    "description": "High-pressure compressed hydrogen storage systems for aircraft",
+    "tags": [
+      "hydrogen-storage",
+      "compressed",
+      "aircraft"
+    ],
+    "regional_availability": [
+      "South East",
+      "Scotland"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 0,
+    "funding_by_type": {
+      "public": 0,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 0,
+    "project_count": 1
+  },
+  {
+    "id": "tech-h2-storage-liquid-001",
+    "name": "Liquid Hydrogen Storage Systems",
+    "category": "H2Storage",
+    "trl_current": 6,
+    "trl_color": "amber",
+    "maturity_risk": "Proven elsewhere / Airport barriers / Scalability issues",
+    "deployment_ready": false,
+    "description": "Cryogenic storage systems for liquid hydrogen at -253°C",
+    "tags": [
+      "hydrogen-storage",
+      "cryogenic",
+      "liquid"
+    ],
+    "regional_availability": [
+      "Scotland"
+    ],
+    "data_quality": {
+      "confidence": "estimated",
+      "last_verified": "2024-11-14T12:42:32.067Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 1200000,
+    "funding_by_type": {
+      "public": 1200000,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 0,
+    "project_count": 0
+  },
+  {
+    "id": "tech-fuel-cell-pem-001",
+    "name": "PEM Fuel Cells for Aviation",
+    "category": "FuelCells",
+    "trl_current": 7,
+    "trl_color": "green",
+    "maturity_risk": "Proven / Power density / Durability",
+    "deployment_ready": true,
+    "description": "Proton Exchange Membrane fuel cells optimized for aircraft applications",
+    "tags": [
+      "fuel-cells",
+      "PEM",
+      "aircraft"
+    ],
+    "regional_availability": [
+      "South East",
+      "East of England"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 20000000,
+    "funding_by_type": {
+      "public": 20000000,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 1,
+    "project_count": 1
+  },
+  {
+    "id": "tech-fuel-cell-sofc-001",
+    "name": "Solid Oxide Fuel Cells",
+    "category": "FuelCells",
+    "trl_current": 5,
+    "trl_color": "amber",
+    "maturity_risk": "Early stage / High temperature / Start-up time",
+    "deployment_ready": false,
+    "description": "High-temperature fuel cells with potential for higher efficiency",
+    "tags": [
+      "fuel-cells",
+      "SOFC",
+      "high-efficiency"
+    ],
+    "data_quality": {
+      "confidence": "estimated",
+      "last_verified": "2024-11-14T12:42:32.067Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 0,
+    "funding_by_type": {
+      "public": 0,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 0,
+    "project_count": 0
+  },
+  {
+    "id": "tech-aircraft-regional-h2-001",
+    "name": "Regional Hydrogen Aircraft (10-80 seats)",
+    "category": "Aircraft",
+    "trl_current": 6,
+    "trl_color": "amber",
+    "maturity_risk": "Prototype / Certification / Infrastructure",
+    "deployment_ready": false,
+    "description": "Regional aircraft designed for hydrogen-electric propulsion",
+    "tags": [
+      "aircraft",
+      "regional",
+      "hydrogen"
+    ],
+    "regional_availability": [
+      "South East"
+    ],
+    "data_quality": {
+      "confidence": "verified",
+      "last_verified": "2025-11-14T12:42:32.064Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 23000000,
+    "funding_by_type": {
+      "public": 23000000,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 1,
+    "project_count": 2
+  },
+  {
+    "id": "tech-aircraft-narrowbody-h2-001",
+    "name": "Narrow-body Hydrogen Aircraft (150+ seats)",
+    "category": "Aircraft",
+    "trl_current": 4,
+    "trl_color": "amber",
+    "maturity_risk": "Concept / Storage challenges / Range limitations",
+    "deployment_ready": false,
+    "description": "Single-aisle aircraft concepts for hydrogen propulsion",
+    "tags": [
+      "aircraft",
+      "narrow-body",
+      "hydrogen"
+    ],
+    "data_quality": {
+      "confidence": "estimated",
+      "last_verified": "2024-11-14T12:42:32.067Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 0,
+    "funding_by_type": {
+      "public": 0,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 0,
+    "project_count": 0
+  },
+  {
+    "id": "tech-infra-refueling-001",
+    "name": "Airport Hydrogen Refueling Infrastructure",
+    "category": "Infrastructure",
+    "trl_current": 5,
+    "trl_color": "amber",
+    "maturity_risk": "Early deployment / Regulatory / Cost",
+    "deployment_ready": false,
+    "description": "Ground infrastructure for hydrogen refueling at airports",
+    "tags": [
+      "infrastructure",
+      "refueling",
+      "airports"
+    ],
+    "regional_availability": [
+      "London",
+      "Scotland"
+    ],
+    "data_quality": {
+      "confidence": "estimated",
+      "last_verified": "2024-11-14T12:42:32.067Z"
+    },
+    "created_at": "2023-11-15T12:42:32.067Z",
+    "updated_at": "2025-11-14T12:42:32.064Z",
+    "total_funding": 0,
+    "funding_by_type": {
+      "public": 0,
+      "private": 0,
+      "mixed": 0
+    },
+    "stakeholder_count": 0,
+    "project_count": 0
+  }
+]
