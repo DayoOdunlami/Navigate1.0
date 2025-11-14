@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Search } from "@/components/Search"
-import { Link } from "next/link"
+import Link from "next/link"
 import { stakeholders, technologies, fundingEvents, projects, relationships } from "@/data/navigate-dummy-data"
 import { useNavigateStore } from "@/stores/navigate-store"
 
@@ -207,7 +207,7 @@ export default function HomePage() {
                   >
                     <div className="flex-1">
                       <div className="font-medium text-slate-900 dark:text-white">
-                        {event.title}
+                        {event.program}
                       </div>
                       <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">
                         {new Date(event.date).toLocaleDateString()} • {event.funding_type}

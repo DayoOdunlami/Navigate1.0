@@ -318,7 +318,7 @@ export const useNavigateStore = create<NavigateStore>((set, get) => ({
       }
       if (filters.searchQuery) {
         const query = filters.searchQuery.toLowerCase();
-        return f.title.toLowerCase().includes(query) || f.description?.toLowerCase().includes(query);
+        return f.program.toLowerCase().includes(query) || f.impact_description?.toLowerCase().includes(query);
       }
       return true;
     });

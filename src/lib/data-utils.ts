@@ -93,13 +93,18 @@ export function toNetworkGraphData(
   const nodes = [...stakeholderNodes, ...technologyNodes];
 
   // Create links from relationships
-  const links: GraphLink[] = relationships.map(rel => ({
-    source: rel.source,
-    target: rel.target,
-    type: rel.type,
-    strength: rel.metadata?.strength || 0.5,
-    width: rel.metadata?.strength ? rel.metadata.strength * 2 : 1,
-  }));
+  const links: GraphLink[] = relationships.map(rel => {
+    // Default strength based on relationship type
+    const defaultStrength = rel.type === 'funds' ? 0.8 : rel.type === 'collaborates_with' ? 0.6 : 0.5;
+    const strength = (rel.metadata as any)?.strength || defaultStrength;
+    return {
+      source: rel.source,
+      target: rel.target,
+      type: rel.type,
+      strength,
+      width: strength * 2,
+    };
+  });
 
   return { nodes, links };
 }

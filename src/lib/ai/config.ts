@@ -35,6 +35,7 @@ export const AI_CONFIG = {
     },
     mock: {
       enabled: true, // Always available as fallback
+      model: 'mock',
     }
   }
 } as const;

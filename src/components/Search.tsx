@@ -79,15 +79,15 @@ export function Search() {
     // Search funding events
     fundingEvents.forEach((f) => {
       const matches =
-        f.title.toLowerCase().includes(lowerQuery) ||
-        f.description?.toLowerCase().includes(lowerQuery);
+        f.program.toLowerCase().includes(lowerQuery) ||
+        f.impact_description?.toLowerCase().includes(lowerQuery);
 
       if (matches) {
         searchResults.push({
           id: f.id,
           type: 'funding',
-          name: f.title,
-          description: f.description,
+          name: f.program,
+          description: f.impact_description,
           entity: f,
         });
       }
