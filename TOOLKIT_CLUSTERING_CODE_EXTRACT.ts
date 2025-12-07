@@ -117,6 +117,8 @@ function createGroupCentroidForce(
     
     nodes.forEach((node) => {
       const key = groupingMode === 'entity_type' ? node.group : node.type;
+      // Skip nodes without a valid key
+      if (!key) return;
       const group = groups.get(key);
       if (!group || group.nodes.length <= 1) return;
       
