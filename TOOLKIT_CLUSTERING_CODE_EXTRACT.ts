@@ -17,6 +17,12 @@ interface GraphNode {
   [key: string]: unknown;
 }
 
+interface GraphLink {
+  source: string | GraphNode;
+  target: string | GraphNode;
+  [key: string]: unknown;
+}
+
 // ─────────────────────────────────────────────────────────────
 // STEP 1: Initial Grid Positioning
 // ─────────────────────────────────────────────────────────────
