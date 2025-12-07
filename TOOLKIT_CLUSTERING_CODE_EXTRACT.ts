@@ -133,8 +133,8 @@ function createGroupCentroidForce(
         // - simulation alpha (weaker as simulation cools down)
         // - groupStrength constant
         const force = distance * groupStrength * alpha;
-        node.vx = (node.vx ?? 0) + (dx / distance) * force;
-        node.vy = (node.vy ?? 0) + (dy / distance) * force;
+        node.vx = (typeof node.vx === 'number' ? node.vx : 0) + (dx / distance) * force;
+        node.vy = (typeof node.vy === 'number' ? node.vy : 0) + (dy / distance) * force;
       }
     });
   };
