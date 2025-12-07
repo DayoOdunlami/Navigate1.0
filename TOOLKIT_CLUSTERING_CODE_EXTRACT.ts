@@ -44,6 +44,8 @@ function initialGridPositioning(
   const groups = new Map<string, typeof nodes>();
   nodes.forEach((node) => {
     const key = groupingMode === 'entity_type' ? node.group : node.type;
+    // Skip nodes without a valid key
+    if (!key) return;
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key)!.push(node);
   });
