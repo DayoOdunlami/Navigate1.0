@@ -6,6 +6,7 @@
  */
 
 import * as d3 from 'd3';
+import type { BaseEntity, UniversalRelationship } from '@/lib/base-entity';
 
 // Type definitions for this code extract
 interface GraphNode {
