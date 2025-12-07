@@ -277,7 +277,9 @@ function exampleUsage() {
  */
 function adaptForUnifiedSchema(
   entities: BaseEntity[],
-  relationships: UniversalRelationship[]
+  relationships: UniversalRelationship[],
+  centerX: number = 400, // Default center X (adjust based on container width)
+  centerY: number = 300  // Default center Y (adjust based on container height)
 ) {
   // Convert entities to GraphNode format
   const nodes: GraphNode[] = entities.map((entity) => ({
