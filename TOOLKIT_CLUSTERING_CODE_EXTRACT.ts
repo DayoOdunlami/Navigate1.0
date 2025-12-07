@@ -7,6 +7,16 @@
 
 import * as d3 from 'd3';
 
+// Type definitions for this code extract
+interface GraphNode {
+  id: string;
+  x?: number;
+  y?: number;
+  group?: string;
+  type?: string;
+  [key: string]: unknown;
+}
+
 // ─────────────────────────────────────────────────────────────
 // STEP 1: Initial Grid Positioning
 // ─────────────────────────────────────────────────────────────
