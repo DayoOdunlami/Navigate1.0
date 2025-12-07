@@ -215,7 +215,10 @@ function setupClusteredSimulation(
     )
     .force('charge', d3.forceManyBody<GraphNode>().strength(-forceRepulsion))
     .force('center', d3.forceCenter(centerX, centerY))
-    .force('collision', d3.forceCollide<GraphNode>().radius((d) => (d.symbolSize || 20) + 5));
+    .force('collision', d3.forceCollide<GraphNode>().radius((d) => {
+      const size = typeof d.symbolSize === 'number' ? d.symbolSize : 20;
+      return size + 5;
+    }));
 
   // 3. Create group centroid force
   const applyGroupCentroidForce = createGroupCentroidForce(nodes, groupingMode);
