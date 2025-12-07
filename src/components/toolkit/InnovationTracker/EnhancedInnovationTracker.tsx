@@ -61,7 +61,7 @@ export function EnhancedInnovationTracker({
 
   // Apply filters and scenario adjustments to data
   const filteredData = useMemo(() => {
-    let nodes = enhancedFundingFlowsData.nodes;
+    const nodes = enhancedFundingFlowsData.nodes;
     let links = enhancedFundingFlowsData.links.filter(link => {
       // Apply funding source filter
       if (filters.fundingSource !== 'all') {

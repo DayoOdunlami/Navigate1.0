@@ -232,6 +232,7 @@ export function NetworkGraphNavigate({
       } else {
         // Add charge force if it doesn't exist
         try {
+          // eslint-disable-next-line @typescript-eslint/no-require-imports
           const d3Force = require('d3-force');
           const engine = fgRef.current.d3Force();
           if (engine) {
@@ -528,6 +529,7 @@ export function NetworkGraphNavigate({
                   const engine = fgRef.current.d3Force();
                   if (engine) {
                     try {
+                      // eslint-disable-next-line @typescript-eslint/no-require-imports
                       const d3Force = require('d3-force');
                       if (!engine.force('charge')) {
                         // Add charge force if not present

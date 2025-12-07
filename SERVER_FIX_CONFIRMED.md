@@ -72,3 +72,4 @@ If you want to test further:
 
 But the core issue - Internal Server Error on all pages - is **completely fixed**.
 
+

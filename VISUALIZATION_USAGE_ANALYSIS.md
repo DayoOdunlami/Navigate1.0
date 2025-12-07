@@ -53,8 +53,9 @@
 - `TreemapSunburstExplorer`
 - `HeatmapNavigate`
 - `ChordDiagramNavigate`
-- `NetworkGraphNavigate`
-- `NetworkGraphNavigate3D`
+- `NetworkGraphNavigate` (Navigate 2D)
+- `NetworkGraphNavigate3D` (Navigate 3D)
+- `NetworkGraph` (Base/Atlas - Challenge data) ⚠️ **MISSING FROM UNREGISTERED LIST**
 - `StreamGraphNavigate`
 - `SwarmPlotNavigate`
 - `FocusAreaMatrix` (CPC)
@@ -63,9 +64,9 @@
 - `PortfolioTreemap` (CPC)
 - `StakeholderSunburst` (CPC)
 - `TreemapSunburstTransition` (CPC)
-- Base versions: `SankeyChart`, `NetworkGraph`, `HeatmapChart`, `SunburstChart`, `ChordDiagram`
+- Base versions: `SankeyChart`, `HeatmapChart`, `SunburstChart`, `ChordDiagram`
 
-**Status:** Uses many visuals, including CPC-specific ones
+**Status:** Uses many visuals, including CPC-specific ones and base/Atlas versions
 
 ---
 
@@ -173,17 +174,15 @@
 ### ✅ VISUALS STILL USED (via `/visualisations/page.tsx`):
 All Navigate visualizations will still be accessible through the Visual Library Gallery
 
-### ⚠️ POTENTIALLY ORPHANED (Base/Atlas versions):
+### ⚠️ BASE/ATLAS VERSIONS (Now in Unregistered List):
 These are the Challenge-based (Atlas) versions, not Navigate versions:
-- `SankeyChart.tsx` (base)
-- `NetworkGraph.tsx` (base)
-- `HeatmapChart.tsx` (base)
-- `SunburstChart.tsx` (base)
-- `ChordDiagram.tsx` (base)
+- `SankeyChart.tsx` (base) - ✅ Added to unregistered list
+- `NetworkGraph.tsx` (base) - ✅ Added to unregistered list (was missing!)
+- `HeatmapChart.tsx` (base) - ✅ Added to unregistered list
+- `SunburstChart.tsx` (base) - ✅ Added to unregistered list
+- `ChordDiagram.tsx` (base) - ✅ Added to unregistered list
 
-**Question:** Are these base versions used anywhere else? Check:
-- Test pages (`/test-*`)
-- Other pages that might use Challenge data
+**Status:** All base versions are now in the unregistered list in `/visualisations/page.tsx` and can be accessed through the Visual Library Gallery.
 
 ### ✅ STILL USED (Specific variants):
 - `NetworkGraphD3.tsx` - Used in `/test-network/page.tsx`
@@ -225,9 +224,11 @@ These are the Challenge-based (Atlas) versions, not Navigate versions:
 
 ### ✅ ALL VISUALS PRESERVED:
 - All Navigate visualizations → Available in `/visualisations/page.tsx` (Visual Library)
-- All base/Atlas visualizations → Available in test pages
+- All base/Atlas visualizations → ✅ **NOW IN UNREGISTERED LIST** in `/visualisations/page.tsx` (Visual Library)
 - All Toolkit visualizations → Available in `/toolkit/page.tsx` and `/visualisations/page.tsx`
 - All CPC visualizations → Available in `/visualisations/page.tsx`
+
+**Note:** The base `NetworkGraph` (Challenge/Atlas data) was missing from the unregistered list but has now been added along with other base versions (SankeyChart, HeatmapChart, SunburstChart, ChordDiagram).
 
 ### ⚠️ ONE POTENTIAL ORPHAN:
 - `TreemapNavigate.tsx` - Only used in `/navigate`, check if `TreemapSunburstExplorer` makes it redundant

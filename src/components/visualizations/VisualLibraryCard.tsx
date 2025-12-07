@@ -81,17 +81,20 @@ const MiniPreview = memo(function MiniPreview({
 }: MiniPreviewProps) {
   const categoryColor = CATEGORY_COLORS[category];
 
-  if (option) {
-    // ECharts mini preview - simplified, non-interactive
-    const miniOption = useMemo(() => ({
+  // ECharts mini preview - simplified, non-interactive
+  const miniOption = useMemo(() => {
+    if (!option) return null;
+    return {
       ...option,
       animation: false,
       tooltip: { show: false },
       legend: { show: false },
       toolbox: { show: false },
       grid: option.grid || { top: 10, right: 10, bottom: 10, left: 10 },
-    }), [option]);
+    };
+  }, [option]);
 
+  if (option && miniOption) {
     return (
       <div className="absolute inset-0 pointer-events-none">
         <ReactECharts
@@ -239,4 +242,5 @@ export const VisualLibraryCardSimple = memo(function VisualLibraryCardSimple({
 });
 
 export default VisualLibraryCard;
+
 

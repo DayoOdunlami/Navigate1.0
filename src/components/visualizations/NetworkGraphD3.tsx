@@ -10,6 +10,7 @@ import {
 
 type LayoutMode = 'organic' | 'grouped';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface NetworkGraphD3Props {
   // Kept for future extensibility; not used for building links anymore
 }

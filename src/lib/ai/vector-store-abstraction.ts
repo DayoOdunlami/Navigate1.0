@@ -64,18 +64,22 @@ export function createVectorStore(
   switch (selectedBackend) {
     case 'json': {
       // Lazy load to avoid importing if not needed
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       const { JSONVectorStore } = require('./vector-store-json');
       return new JSONVectorStore();
     }
     case 'vercel-kv': {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       const { VercelKVVectorStore } = require('./vector-store-vercel-kv');
       return new VercelKVVectorStore();
     }
     case 'supabase': {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       const { SupabaseVectorStore } = require('./vector-store-supabase');
       return new SupabaseVectorStore();
     }
     default: {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       const { JSONVectorStore } = require('./vector-store-json');
       return new JSONVectorStore();
     }

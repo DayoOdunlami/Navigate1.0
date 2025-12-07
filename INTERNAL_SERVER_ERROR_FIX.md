@@ -60,3 +60,4 @@ export const AVAILABLE_VISUALIZATIONS: VisualizationInfo[] = (() => {
 - AI function definitions will use empty arrays if registry fails (non-critical)
 - Check console logs to identify any underlying registry issues
 
+

@@ -55,14 +55,6 @@ export function InnovationTrackerFundingInsights({ links, onLinkSelect }: Fundin
     }));
   }, [scatterData]);
 
-  if (scatterData.length === 0) {
-    return (
-      <div className="h-[600px] flex items-center justify-center text-gray-500">
-        No programme data available for the selected filters.
-      </div>
-    );
-  }
-
   const uniqueProgrammes = useMemo(
     () => Array.from(new Set(scatterData.map(item => item.programme))),
     [scatterData]
@@ -201,6 +193,14 @@ export function InnovationTrackerFundingInsights({ links, onLinkSelect }: Fundin
   };
 
   const currentOption = chartMode === 'scatter' ? scatterOption : barOption;
+
+  if (scatterData.length === 0) {
+    return (
+      <div className="h-[600px] flex items-center justify-center text-gray-500">
+        No programme data available for the selected filters.
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">

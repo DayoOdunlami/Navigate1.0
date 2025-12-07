@@ -77,3 +77,4 @@ tools: getAIFunctionDefinitions().map(...)
 - For now, static list provides all necessary visualization IDs for AI function calling
 - This is a safer, more reliable approach that avoids server/client boundary issues
 
+
