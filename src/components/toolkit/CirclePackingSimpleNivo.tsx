@@ -147,28 +147,31 @@ export function CirclePackingSimpleNivo({
             }}
             layers={[
               'circles',
-              ({ nodes, labelSkipRadius }) => (
-                <g>
-                  {nodes
-                    .filter((node) => node.data && node.data.children && node.radius > labelSkipRadius)
-                    .map((node) => (
-                      <text
-                        key={node.id}
-                        x={node.x}
-                        y={node.y + node.radius + 12}
-                        textAnchor="middle"
-                        style={{
-                          fill: node.color as string,
-                          fontSize: 11,
-                          fontWeight: 600,
-                          pointerEvents: 'none',
-                        }}
-                      >
-                        {node.data.name}
-                      </text>
-                    ))}
-                </g>
-              ),
+              ({ nodes }) => {
+                const labelSkipRadius = 20; // Minimum radius to show label
+                return (
+                  <g>
+                    {nodes
+                      .filter((node) => node.data && node.data.children && node.radius > labelSkipRadius)
+                      .map((node) => (
+                        <text
+                          key={node.id}
+                          x={node.x}
+                          y={node.y + node.radius + 12}
+                          textAnchor="middle"
+                          style={{
+                            fill: node.color as string,
+                            fontSize: 11,
+                            fontWeight: 600,
+                            pointerEvents: 'none',
+                          }}
+                        >
+                          {node.data.name}
+                        </text>
+                      ))}
+                  </g>
+                );
+              },
               ({ nodes }) => {
                 if (!hoveredId) return null;
                 const hoveredNode = nodes.find((node) => node.id === hoveredId);
