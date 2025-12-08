@@ -23,7 +23,12 @@ export function middleware(request: NextRequest) {
 
   if (submittedPassword === sitePassword) {
     // Password is correct - set cookie and redirect
-    const response = NextResponse.redirect(url);
+    // Remove password from URL first
+    url.searchParams.delete('password');
+    const cleanUrl = url.toString();
+    
+    // Create redirect response and set cookie
+    const response = NextResponse.redirect(cleanUrl);
     response.cookies.set('site-auth', sitePassword, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
@@ -31,9 +36,7 @@ export function middleware(request: NextRequest) {
       maxAge: 60 * 60 * 24 * 7, // 7 days
       path: '/',
     });
-    // Remove password from URL
-    url.searchParams.delete('password');
-    return NextResponse.redirect(url);
+    return response;
   }
 
   // Show password prompt page
