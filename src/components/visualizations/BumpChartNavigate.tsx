@@ -10,15 +10,15 @@
 import React, { useMemo, useState } from 'react';
 import { ResponsiveBump } from '@nivo/bump';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Technology, TechnologyCategory } from '@/lib/navigate-types';
-import { hiaRoadmap, RoadmapItem } from '@/data/roadmap-data';
+import { hiaRoadmap } from '@/data/roadmap-data';
 
 interface BumpChartNavigateProps {
   technologies: Technology[];
   view?: 'all_technologies' | 'by_category' | 'top_advancing';
   selectedCategories?: TechnologyCategory[];
   onViewChange?: (view: 'all_technologies' | 'by_category' | 'top_advancing') => void;
+  // kept for API compatibility; currently unused
   onTechnologySelect?: (techId: string) => void;
   className?: string;
 }
@@ -29,17 +29,15 @@ export function BumpChartNavigate({
   technologies,
   view: externalView,
   selectedCategories: externalCategories = [],
-  onViewChange,
-  onTechnologySelect,
+  onViewChange: _onViewChange,
+  onTechnologySelect: _onTechnologySelect,
   className = '' 
 }: BumpChartNavigateProps) {
-  const [internalView, setInternalView] = useState<BumpView>('all_technologies');
-  const [internalCategories, setInternalCategories] = useState<TechnologyCategory[]>([]);
+  const [internalView] = useState<BumpView>('all_technologies');
   
   // Use external props if provided, otherwise use internal state
   const view = externalView ?? internalView;
-  const selectedCategories = externalCategories.length > 0 ? externalCategories : internalCategories;
-  const setView = onViewChange ?? setInternalView;
+  const selectedCategories = externalCategories.length > 0 ? externalCategories : [];
 
   // Generate historical TRL progression for each technology
   // Since we only have current TRL, we'll simulate realistic progression
@@ -106,11 +104,6 @@ export function BumpChartNavigate({
       data: generateTRLHistory(tech)
     }));
   }, [technologies, view, selectedCategories]);
-
-  // Get unique categories for filtering
-  const categories = useMemo(() => {
-    return Array.from(new Set(technologies.map(t => t.category))) as TechnologyCategory[];
-  }, [technologies]);
 
   // Helper to get color by category
   const getCategoryColor = (category: TechnologyCategory): string => {
@@ -221,29 +214,15 @@ export function BumpChartNavigate({
               startLabel={d => d.id}
               endLabel={d => {
                 const lastPoint = d.data[d.data.length - 1];
-                const yVal = (lastPoint as any)?.y ?? (lastPoint as any)?.data?.y ?? '';
+                const yVal = lastPoint?.y ?? '';
                 return `${d.id} ${yVal !== '' ? `(TRL ${yVal})` : ''}`;
               }}
-              tooltip={({ serie }) => (
-                <div className="bg-white p-2 rounded shadow-md text-sm border border-gray-200">
-                  <div className="font-semibold" style={{ color: getTechColor(serie.id) }}>
-                    {serie.id}
-                  </div>
-                  <div className="text-gray-600 mt-1">
-                    {serie.data.map((point, idx) => (
-                      <div key={idx}>
-                        {point.x}: TRL {point.y}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
             />
             
             {/* Timeline Markers Overlay */}
             {timelineMarkers.length > 0 && (
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none" style={{ marginTop: '40px', marginLeft: '60px', marginRight: '100px', marginBottom: '60px' }}>
-                {timelineMarkers.map((marker, idx) => {
+                {timelineMarkers.map((marker) => {
                   // Calculate position: chart has 6 years (2019-2024), so each year is ~16.67% width
                   const yearIndex = marker.yearIndex;
                   const xPosition = `${(yearIndex / 5) * 100}%`; // 0-5 index, 5 intervals
