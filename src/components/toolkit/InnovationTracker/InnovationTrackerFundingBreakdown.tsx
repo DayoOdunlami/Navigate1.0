@@ -100,10 +100,14 @@ export function InnovationTrackerFundingBreakdown({
       categoryNode.value += value;
     });
 
+    const sortedCategories = Array.from(categories.values()).sort((a, b) => b.value - a.value);
+    const totalValue = sortedCategories.reduce((sum, cat) => sum + cat.value, 0);
+    
     return {
       id: 'funding-breakdown',
       name: 'Funding Breakdown',
-      children: Array.from(categories.values()).sort((a, b) => b.value - a.value),
+      value: totalValue,
+      children: sortedCategories,
     };
   }, [nodes, nodeTotals]);
 
@@ -140,10 +144,14 @@ export function InnovationTrackerFundingBreakdown({
       groupNode.value += link.value;
     });
 
+    const sortedGroups = Array.from(groups.values()).sort((a, b) => b.value - a.value);
+    const totalValue = sortedGroups.reduce((sum, group) => sum + group.value, 0);
+    
     return {
       id: 'programme-breakdown',
       name: 'Programme Breakdown',
-      children: Array.from(groups.values()).sort((a, b) => b.value - a.value),
+      value: totalValue,
+      children: sortedGroups,
     };
   }, [links]);
 
