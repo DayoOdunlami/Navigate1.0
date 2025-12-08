@@ -165,8 +165,8 @@ function NetworkFlowContentEnhanced({
   searchQuery: string;
   selectedCategory: string | null;
 }) {
-  const [nodes, setNodes, onNodesChange] = useNodesState([]);
-  const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+  const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
+  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
   const { fitView, getNodes, getEdges, deleteElements } = useReactFlow();
   const [showEdges, setShowEdges] = useState(true);
   const [focusedNodeId, setFocusedNodeId] = useState<string | null>(null);
@@ -192,9 +192,11 @@ function NetworkFlowContentEnhanced({
   // Calculate connection counts
   const connectionCounts = useMemo(() => {
     const counts: Record<string, number> = {};
-    edges.forEach(edge => {
-      counts[edge.source] = (counts[edge.source] || 0) + 1;
-      counts[edge.target] = (counts[edge.target] || 0) + 1;
+    edges.forEach((edge: Edge) => {
+      const source = typeof edge.source === 'string' ? edge.source : edge.source;
+      const target = typeof edge.target === 'string' ? edge.target : edge.target;
+      counts[source] = (counts[source] || 0) + 1;
+      counts[target] = (counts[target] || 0) + 1;
     });
     return counts;
   }, [edges]);
