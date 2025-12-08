@@ -9,6 +9,7 @@ export type VisualizationType =
   | 'sankey'
   | 'heatmap'
   | 'network'
+  | 'network3d'
   | 'network-toolkit'
   | 'sunburst'
   | 'chord'
@@ -20,7 +21,8 @@ export type VisualizationType =
   | 'stream'
   | 'parallel'
   | 'swarm'
-  | 'timeline';
+  | 'timeline'
+  | 'bubble-scatter';
 
 export interface VisualizationControlContext {
   useNavigateData: boolean;

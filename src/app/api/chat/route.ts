@@ -143,12 +143,12 @@ export async function POST(request: NextRequest) {
         role: 'system',
         content: systemPrompt,
       },
-      ...messages.map((msg: any) => {
+      ...messages.map((msg: any): OpenAI.Chat.Completions.ChatCompletionMessageParam | null => {
         try {
           // Handle messages with tool calls
           if (msg.role === 'assistant' && msg.tool_calls) {
             return {
-              role: 'assistant',
+              role: 'assistant' as const,
               content: msg.content || null,
               tool_calls: Array.isArray(msg.tool_calls) ? msg.tool_calls : [],
             };
@@ -156,24 +156,34 @@ export async function POST(request: NextRequest) {
           // Handle tool result messages
           if (msg.role === 'tool') {
             return {
-              role: 'tool',
+              role: 'tool' as const,
               content: msg.content || '',
               tool_call_id: msg.tool_call_id || '',
             };
           }
+          // Handle user messages
+          if (msg.role === 'user') {
+            return {
+              role: 'user' as const,
+              content: msg.content || '',
+            };
+          }
+          // Default to user role
           return {
-            role: msg.role || 'user',
+            role: 'user' as const,
             content: msg.content || '',
           };
         } catch (error) {
           console.error('Error processing message:', error, msg);
           // Return a safe fallback message
           return {
-            role: 'user',
+            role: 'user' as const,
             content: '',
           };
         }
-      }).filter(msg => msg.content !== '' || msg.role === 'assistant' || msg.role === 'tool'), // Filter out empty messages except assistant/tool
+      }).filter((msg): msg is OpenAI.Chat.Completions.ChatCompletionMessageParam => 
+        msg !== null && (msg.content !== '' || msg.role === 'assistant' || msg.role === 'tool')
+      ), // Filter out empty messages except assistant/tool
     ];
 
     // Call OpenAI API with function calling enabled

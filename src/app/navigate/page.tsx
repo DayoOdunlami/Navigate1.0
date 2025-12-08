@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { LayoutSwitcher, LayoutOption } from "@/components/layouts/LayoutSwitcher"
 import { LayoutRenderer } from "@/components/layouts/LayoutRenderer"
 import GlobalControlsPanel from "@/components/controls/GlobalControlsPanel"
-import { VisualizationControlSections, VisualizationControlContext } from "@/components/controls/VisualizationControlSections"
+import { VisualizationControlSections, VisualizationControlContext, type VisualizationType } from "@/components/controls/VisualizationControlSections"
 import { VisualizationRenderer } from "@/components/visualizations/VisualizationRenderer"
 import { stakeholders, technologies, projects, relationships, fundingEvents } from "@/data/navigate-dummy-data"
 import { AppProvider, useAppContext } from "@/contexts/AppContext"
@@ -42,8 +42,6 @@ import { ParallelCoordinatesNavigate } from "@/components/visualizations/Paralle
 import { SwarmPlotNavigate } from "@/components/visualizations/SwarmPlotNavigate"
 import { UnifiedInsightsPanel } from "@/components/visualizations/UnifiedInsightsPanel"
 import { CirclePackingNode } from "@/data/toolkit/circlePackingData"
-
-type VisualizationType = 'sankey' | 'heatmap' | 'network' | 'network3d' | 'network-toolkit' | 'sunburst' | 'chord' | 'radar' | 'bar' | 'circle' | 'bump' | 'treemap' | 'stream' | 'parallel' | 'swarm' | 'timeline' | 'bubble-scatter'
 
 type ViewCategory = 'all' | 'network' | 'funding' | 'technology' | 'dashboard'
 
@@ -1136,46 +1134,57 @@ function NavigateContent() {
                     ]
                   : [],
               }}
-              onFunctionCall={(functionName, args) => {
-                switch (functionName) {
-                  case 'switch_visualization':
-                    if (args?.visualization) {
-                      setActiveViz(args.visualization as VisualizationType)
-                    }
-                    break
-                  case 'set_control':
-                    if (!handleAISetControl(args?.controlId, args?.value)) {
-                      console.warn('AI control change failed', args)
-                    }
-                    break
-                  case 'filter_data': {
-                    const range = parseRange(args?.trlRange)
-                    if (range) {
-                      const min = Math.max(1, Math.min(range[0], range[1]))
-                      const max = Math.min(9, Math.max(range[0], range[1]))
-                      if (min <= max) {
-                        setTrlRange([min, max])
+              onFunctionCall={async (functionName, args) => {
+                try {
+                  switch (functionName) {
+                    case 'switch_visualization':
+                      if (args?.visualization) {
+                        setActiveViz(args.visualization as VisualizationType)
                       }
-                    }
-                    if (args?.categories) {
-                      const categories = filterTechnologyCategories(parseStringArray(args.categories))
-                      if (categories.length > 0) {
-                        setSelectedCategories(categories)
+                      return { success: true }
+                    case 'set_control':
+                      if (!handleAISetControl(args?.controlId, args?.value)) {
+                        console.warn('AI control change failed', args)
+                        return { success: false, error: 'Control change failed' }
                       }
-                    }
-                    if (typeof args?.useNavigateData !== 'undefined') {
-                      const bool = parseBoolean(args.useNavigateData)
-                      if (typeof bool === 'boolean') {
-                        setUseNavigateData(bool)
+                      return { success: true }
+                    case 'filter_data': {
+                      const range = parseRange(args?.trlRange)
+                      if (range) {
+                        const min = Math.max(1, Math.min(range[0], range[1]))
+                        const max = Math.min(9, Math.max(range[0], range[1]))
+                        if (min <= max) {
+                          setTrlRange([min, max])
+                        }
                       }
+                      if (args?.categories) {
+                        const categories = filterTechnologyCategories(parseStringArray(args.categories))
+                        if (categories.length > 0) {
+                          setSelectedCategories(categories)
+                        }
+                      }
+                      if (typeof args?.useNavigateData !== 'undefined') {
+                        const bool = parseBoolean(args.useNavigateData)
+                        if (typeof bool === 'boolean') {
+                          setUseNavigateData(bool)
+                        }
+                      }
+                      return { success: true }
                     }
-                    break
+                    case 'highlight_entities':
+                      if (!handleAIHighlightEntities(args)) {
+                        console.warn('AI highlight failed', args)
+                        return { success: false, error: 'Highlight failed' }
+                      }
+                      return { success: true }
+                    default:
+                      return { success: false, error: `Unknown function: ${functionName}` }
                   }
-                  case 'highlight_entities':
-                    if (!handleAIHighlightEntities(args)) {
-                      console.warn('AI highlight failed', args)
-                    }
-                    break
+                } catch (error) {
+                  return { 
+                    success: false, 
+                    error: error instanceof Error ? error.message : 'Unknown error' 
+                  }
                 }
               }}
             />
@@ -1408,7 +1417,6 @@ function NavigateContent() {
                   <HeatmapNavigate
                     stakeholders={stakeholders}
                     technologies={technologies}
-                    fundingEvents={fundingEvents}
                     className="border-none shadow-none"
                   />
                 ),
