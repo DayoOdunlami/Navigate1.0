@@ -82,18 +82,19 @@ function StakeholderNode({ data, selected }: { data: any; selected?: boolean }) 
 }
 
 // Custom Edge with Label
-function CustomEdge({ data, label, style }: { data?: any; label?: string; style?: any }) {
+function CustomEdge(props: Edge) {
+  const { data, label, style } = props;
   return (
     <>
       <path
         className="react-flow__edge-path"
-        d={style?.path}
+        d={(style as any)?.path}
         style={style}
       />
       {label && (
         <text
-          x={style?.labelX}
-          y={style?.labelY}
+          x={(style as any)?.labelX}
+          y={(style as any)?.labelY}
           className="react-flow__edge-text"
           textAnchor="middle"
           dominantBaseline="middle"
