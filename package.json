@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "populate-data": "tsx scripts/populate-json.ts",
@@ -29,7 +29,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.545.0",
-    "next": "16.0.3",
+    "next": "16.0.7",
     "openai": "^4.24.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -46,7 +46,7 @@
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.0.3",
+    "eslint-config-next": "16.0.7",
     "tailwindcss": "^4",
     "tsx": "^4.7.0",
     "typescript": "^5"
