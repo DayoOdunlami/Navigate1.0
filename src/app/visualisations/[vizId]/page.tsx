@@ -23,9 +23,40 @@ import {
   type ControlState,
   type VisualizationConfig,
 } from '@/lib/visualisations/registry';
+import type { ControlDefinition } from '@/lib/visualisations/types';
 
 // Import your unified data
 import { unifiedEntities, unifiedRelationships, getEntitiesByDomain } from '@/data/unified';
+
+// =============================================================================
+// TYPES
+// =============================================================================
+
+type AIVisualizationContext = {
+  visualization: {
+    id: string;
+    name: string;
+    description?: string;
+    aiDescription?: string;
+  };
+  controls: {
+    schema: ControlDefinition[];
+    state: ControlState;
+  };
+  data: {
+    domain: Domain | 'all';
+    entityCounts: {
+      total: number;
+      challenges: number;
+      stakeholders: number;
+      technologies: number;
+    };
+    availableFilters: string[];
+  };
+  selection: {
+    entity: any;
+  };
+};
 
 // =============================================================================
 // PANEL SYSTEM (V6 Pattern)
@@ -411,7 +442,6 @@ export default function VisualizationPage() {
                             activeViz: vizConfig.name,
                             useNavigateData: activeDomain === 'navigate' || activeDomain === 'all',
                             selectedEntities: selectedEntity ? [selectedEntity] : [],
-                            visualizationContext: aiContext,
                           }}
                           onFunctionCall={handleAIFunctionCall}
                         />
