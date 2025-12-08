@@ -584,7 +584,8 @@ export function EChartsGraphView({
             style={{ height: '100%', width: '100%' }}
             onEvents={{ click: handleNodeClick }}
             onChartReady={(instance) => {
-              chartRef.current = instance;
+              // Type assertion needed due to type mismatch between echarts-for-react and echarts types
+              chartRef.current = instance as any;
             }}
           />
         </div>
