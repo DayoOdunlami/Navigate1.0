@@ -1499,8 +1499,6 @@ function NavigateContent() {
                     stakeholders={stakeholders}
                     fundingEvents={fundingEvents}
                     technologies={technologies}
-                    projects={projects}
-                    relationships={relationships}
                     className="border-none shadow-none"
                   />
                 ),
