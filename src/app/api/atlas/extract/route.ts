@@ -8,8 +8,8 @@ import { needsHumanReview } from '@/lib/atlas/validator';
 import { getAIClient, getAvailableProviders, AVAILABLE_MODELS } from '@/lib/atlas/ai-provider';
 
 export async function POST(req: NextRequest) {
+  let body: { url?: string; provider?: string; model?: string; skipEnrichment?: boolean } | null = null;
   try {
-    let body;
     try {
       body = await req.json();
     } catch (parseError) {
@@ -18,6 +18,14 @@ export async function POST(req: NextRequest) {
         { status: 400 }
       );
     }
+    
+    if (!body) {
+      return NextResponse.json(
+        { error: 'Request body is required' },
+        { status: 400 }
+      );
+    }
+    
     const { 
       url, 
       provider = 'openai',  // Default to OpenAI
@@ -83,7 +91,7 @@ export async function POST(req: NextRequest) {
     console.error('Full error details:', {
       message: errorMessage,
       stack: errorStack,
-      url: body?.url,
+      url: body?.url || 'unknown',
     });
     
     return NextResponse.json(

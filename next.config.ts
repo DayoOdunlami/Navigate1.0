@@ -8,10 +8,8 @@ const nextConfig: NextConfig = {
   },
   // Configure server-only modules - these are only used in API routes
   serverExternalPackages: ['fs', 'path'],
-  // Turbopack configuration
-  experimental: {
-    serverComponentsExternalPackages: ['fs', 'path'],
-  },
+  // Remove deprecated experimental.serverComponentsExternalPackages
+  // (moved to serverExternalPackages in Next.js 15)
   webpack: (config, { isServer }) => {
     // Ensure fs module is only available on server (for non-Turbopack builds)
     if (!isServer) {

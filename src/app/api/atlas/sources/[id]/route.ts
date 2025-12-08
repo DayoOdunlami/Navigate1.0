@@ -7,11 +7,12 @@ import { getSources, updateSource, deleteSource } from '@/lib/atlas/store';
 
 export async function PUT(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await context.params;
     const body = await req.json();
-    const source = await updateSource(params.id, body);
+    const source = await updateSource(id, body);
     if (!source) {
       return NextResponse.json({ error: 'Source not found' }, { status: 404 });
     }
@@ -27,10 +28,11 @@ export async function PUT(
 
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
-    const deleted = await deleteSource(params.id);
+    const { id } = await context.params;
+    const deleted = await deleteSource(id);
     if (!deleted) {
       return NextResponse.json({ error: 'Source not found' }, { status: 404 });
     }
