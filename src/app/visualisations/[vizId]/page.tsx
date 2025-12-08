@@ -22,7 +22,6 @@ import {
   type Domain,
   type ControlState,
   type VisualizationConfig,
-  type AIVisualizationContext,
 } from '@/lib/visualisations/registry';
 
 // Import your unified data
