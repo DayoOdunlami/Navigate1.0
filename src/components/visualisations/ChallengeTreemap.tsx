@@ -8,7 +8,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { ResponsiveTreemap } from '@nivo/treemap';
+import { ResponsiveTreeMap } from '@nivo/treemap';
 import type { VisualizationComponentProps } from '@/lib/visualisations/types';
 import { transformToTreemap } from '@/lib/visualisations/adapters/challengeTreemap';
 import { unifiedEntities } from '@/data/unified';
@@ -110,7 +110,7 @@ export function ChallengeTreemap({
 
   return (
     <div className={`w-full h-full ${className}`}>
-      <ResponsiveTreemap
+      <ResponsiveTreeMap
         data={treemapData}
         identity="name"
         value="value"
