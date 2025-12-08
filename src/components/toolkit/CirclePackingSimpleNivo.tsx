@@ -133,7 +133,9 @@ export function CirclePackingSimpleNivo({
             onMouseLeave={() => setHoveredId(null)}
             tooltip={({ node }) => {
               const nivoNode = node?.data as NivoNode | undefined;
-              if (!nivoNode) return null;
+              if (!nivoNode) {
+                return <div className="bg-white p-2 rounded border shadow min-w-[180px]"></div>;
+              }
               const data = nivoNode.data;
               return (
                 <div className="bg-white p-2 rounded border shadow min-w-[180px]">
