@@ -142,7 +142,7 @@ export function BarChartNavigate({
       case 'projects_by_status':
       case 'tech_by_trl':
         return ['Technology Count', 'Project Count'].filter(key => 
-          getData().some(d => d.hasOwnProperty(key))
+          getBaseData().some(d => d.hasOwnProperty(key))
         );
       default:
         return [];
