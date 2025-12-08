@@ -143,10 +143,16 @@ export function CirclePackingStakeholderNivoView() {
               {INFO_FIELDS.map(({ label, key }) => {
                 const value = selectedNode[key];
                 if (!value) return null;
+                // Convert value to string for rendering
+                const displayValue = Array.isArray(value) 
+                  ? value.join(', ') 
+                  : typeof value === 'object' 
+                    ? JSON.stringify(value) 
+                    : String(value);
                 return (
                   <div key={key as string}>
                     <div className="text-xs font-medium text-slate-500">{label}</div>
-                    <div className="text-sm text-slate-900">{value}</div>
+                    <div className="text-sm text-slate-900">{displayValue}</div>
                   </div>
                 );
               })}
