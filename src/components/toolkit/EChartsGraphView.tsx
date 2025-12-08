@@ -245,7 +245,8 @@ export function EChartsGraphView({
 
     const chart = chartRef.current;
     const computePods = () => {
-      const series = chart?.getModel().getSeriesByIndex(0);
+      // Accessing internal ECharts API - using type assertion to bypass private method check
+      const series = chart ? (chart as any).getModel().getSeriesByIndex(0) : undefined;
       if (!series) return;
       const data = series.getData();
       const podsMap = new Map<string, { points: Array<[number, number]>; color: string }>();
