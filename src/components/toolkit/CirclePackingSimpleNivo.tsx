@@ -147,7 +147,6 @@ export function CirclePackingSimpleNivo({
             }}
             layers={[
               'circles',
-              'legends',
               ({ nodes, labelSkipRadius }) => (
                 <g>
                   {nodes
