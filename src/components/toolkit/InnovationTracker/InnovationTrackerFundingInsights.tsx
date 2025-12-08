@@ -72,7 +72,7 @@ export function InnovationTrackerFundingInsights({ links, onLinkSelect }: Fundin
   }, [scatterData]);
 
   useEffect(() => {
-    const chartInstance = chartRef.current?.getEchartsInstance?.();
+    const chartInstance = chartRef.current;
     if (!chartInstance) {
       return;
     }
@@ -217,11 +217,14 @@ export function InnovationTrackerFundingInsights({ links, onLinkSelect }: Fundin
       </div>
       <div className="w-full h-[600px]">
         <ReactECharts
-          ref={chartRef}
           option={currentOption}
           style={{ width: '100%', height: '100%' }}
           onEvents={handleEvents}
           notMerge={false}
+          onChartReady={(instance) => {
+            // Store chart instance for background click handling
+            chartRef.current = instance as any;
+          }}
         />
       </div>
     </div>
