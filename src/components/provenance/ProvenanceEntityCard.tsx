@@ -47,7 +47,7 @@ export function ProvenanceEntityCard({
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger>
-                    <Badge variant="success" className="cursor-help">
+                    <Badge variant="default" className="cursor-help bg-green-600 text-white border-green-600">
                       ✓ Verified
                     </Badge>
                   </TooltipTrigger>
