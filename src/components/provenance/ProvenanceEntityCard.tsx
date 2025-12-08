@@ -62,7 +62,7 @@ export function ProvenanceEntityCard({
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger>
-                    <Badge variant="warning" className="cursor-help">
+                    <Badge variant="default" className="cursor-help bg-yellow-600 text-white border-yellow-600">
                       🕐 Stale
                     </Badge>
                   </TooltipTrigger>
