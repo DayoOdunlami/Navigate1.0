@@ -89,10 +89,10 @@ export function CirclePackingStakeholderNivoView() {
                 setSelectedNode(nivoNode.data);
               }
             }}
-            tooltip={({ node }) => {
-              const nivoNode = node.data as NivoNode | undefined;
+            tooltip={(datum) => {
+              const nivoNode = datum?.data as NivoNode | undefined;
               if (!nivoNode) {
-                return null;
+                return <div className="bg-white p-2 rounded border shadow min-w-[180px]"></div>;
               }
               const data = nivoNode.data;
               return (
@@ -105,7 +105,6 @@ export function CirclePackingStakeholderNivoView() {
             }}
             layers={[
               'circles',
-              'legends',
               ({ nodes, labelSkipRadius }) => (
                 <g>
                   {nodes
