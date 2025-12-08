@@ -219,7 +219,11 @@ export function BumpChartNavigate({
               margin={{ top: 40, right: 100, bottom: 60, left: 60 }}
               axisRight={null}
               startLabel={d => d.id}
-              endLabel={d => `${d.id} (TRL ${d.y})`}
+              endLabel={d => {
+                const lastPoint = d.data[d.data.length - 1];
+                const yVal = (lastPoint as any)?.y ?? (lastPoint as any)?.data?.y ?? '';
+                return `${d.id} ${yVal !== '' ? `(TRL ${yVal})` : ''}`;
+              }}
               tooltip={({ serie }) => (
                 <div className="bg-white p-2 rounded shadow-md text-sm border border-gray-200">
                   <div className="font-semibold" style={{ color: getTechColor(serie.id) }}>
