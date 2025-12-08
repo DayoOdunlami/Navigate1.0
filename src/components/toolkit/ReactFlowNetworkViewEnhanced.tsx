@@ -384,10 +384,11 @@ function NetworkFlowContentEnhanced({
       const query = searchQuery.toLowerCase();
       setNodes((nds) =>
         nds.map((node) => {
+          const nodeData = node.data as { fullName?: string; label?: string; category?: string };
           const matches =
-            node.data.fullName?.toLowerCase().includes(query) ||
-            node.data.label?.toLowerCase().includes(query) ||
-            node.data.category?.toLowerCase().includes(query);
+            nodeData.fullName?.toLowerCase().includes(query) ||
+            nodeData.label?.toLowerCase().includes(query) ||
+            nodeData.category?.toLowerCase().includes(query);
           return {
             ...node,
             hidden: !matches,
