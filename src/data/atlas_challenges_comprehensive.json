@@ -1,0 +1,2357 @@
+{
+  "metadata": {
+    "created": "2025-12-08",
+    "version": "1.0",
+    "description": "Comprehensive UK transport innovation funding opportunities",
+    "total_challenges": 78,
+    "tier_breakdown": {
+      "tier_1": 45,
+      "tier_2": 12,
+      "tier_3": 8,
+      "tier_4": 8,
+      "tier_5": 5
+    }
+  },
+  "challenges": [
+    {
+      "id": "ATL-001",
+      "title": "ATI Strategic Batch - Zero Carbon Propulsion",
+      "source": "Aerospace Technology Institute",
+      "source_tier": 1,
+      "funding_body": "ATI",
+      "programme": "Strategic Batch",
+      "funding_amount_gbp": 50000000,
+      "funding_range": "£2m-£20m per project",
+      "deadline": "2025-07-31",
+      "deadline_type": "rolling_monthly",
+      "status": "open",
+      "url": "https://www.ati.org.uk/funding/",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Zero-carbon propulsion", "Hydrogen aviation", "Electric flight"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Strategic funding for zero-carbon aviation propulsion technologies including hydrogen fuel cells, electric propulsion, and hybrid systems.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Direct alignment with aviation decarbonisation focus"
+      }
+    },
+    {
+      "id": "ATL-002",
+      "title": "ATI SME Programme",
+      "source": "Aerospace Technology Institute",
+      "source_tier": 1,
+      "funding_body": "ATI",
+      "programme": "SME Programme",
+      "funding_amount_gbp": 10000000,
+      "funding_range": "£100k-£500k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "open",
+      "url": "https://www.ati.org.uk/funding/sme-programme/",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Decarbonisation", "Supply Chain"],
+      "focus_areas": ["Supply chain innovation", "Manufacturing technology"],
+      "trl_range": "3-6",
+      "eligibility": {
+        "organisation_types": ["SME"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": true
+      },
+      "grant_rate_percent": 70,
+      "description": "Dedicated funding stream for aerospace SMEs to develop innovative technologies for the aviation supply chain.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "SME supply chain focus aligns with CPC ecosystem building"
+      }
+    },
+    {
+      "id": "ATL-003",
+      "title": "ATI Non-CO2 Emissions Programme",
+      "source": "Aerospace Technology Institute",
+      "source_tier": 1,
+      "funding_body": "ATI",
+      "programme": "Non-CO2 Programme",
+      "funding_amount_gbp": 25000000,
+      "funding_range": "£500k-£5m per project",
+      "deadline": "2025-09-30",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.ati.org.uk/",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Decarbonisation", "Safety"],
+      "focus_areas": ["Contrails", "NOx emissions", "Particulates"],
+      "trl_range": "2-5",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Research and development to reduce non-CO2 aviation emissions including contrails, NOx, and particulate matter.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Emerging area with significant climate impact"
+      }
+    },
+    {
+      "id": "ATL-004",
+      "title": "Clean Maritime Demonstration Competition Round 6 (CMDC6)",
+      "source": "UK SHORE / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "Innovate UK",
+      "programme": "UK SHORE",
+      "funding_amount_gbp": 30000000,
+      "funding_range": "£1m-£10m per project",
+      "deadline": "2025-04-16",
+      "deadline_type": "competition",
+      "status": "upcoming",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/",
+      "modes": ["Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Zero-emission vessels", "Shore power", "Alternative fuels"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation", "Public Sector"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Demonstration projects for clean maritime technologies including vessels, port infrastructure, and alternative fuels.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Core maritime decarbonisation programme"
+      }
+    },
+    {
+      "id": "ATL-005",
+      "title": "DRIVE35 Collaborate - Automotive R&D",
+      "source": "Advanced Propulsion Centre / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "APC/Innovate UK",
+      "programme": "DRIVE35",
+      "funding_amount_gbp": 40000000,
+      "funding_range": "£5m-£25m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "open",
+      "url": "https://www.apcuk.co.uk/drive35/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation", "Autonomy"],
+      "focus_areas": ["Electric vehicles", "Battery technology", "Power electronics"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Collaborative R&D projects to develop and commercialise zero-emission vehicle technologies.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Automotive sector adjacent to transport infrastructure"
+      }
+    },
+    {
+      "id": "ATL-006",
+      "title": "DRIVE35 Demonstrate",
+      "source": "Advanced Propulsion Centre / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "APC/Innovate UK",
+      "programme": "DRIVE35",
+      "funding_amount_gbp": 15000000,
+      "funding_range": "£500k-£1.5m per project",
+      "deadline": "2025-09-03",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.apcuk.co.uk/drive35/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Technology demonstration", "Vehicle integration"],
+      "trl_range": "5-6",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Demonstration projects for automotive technologies at TRL 5-6, supporting route to market.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Demonstration stage projects"
+      }
+    },
+    {
+      "id": "ATL-007",
+      "title": "DRIVE35 Mobilise - SME Accelerator",
+      "source": "Advanced Propulsion Centre / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "APC/Innovate UK",
+      "programme": "DRIVE35",
+      "funding_amount_gbp": 5000000,
+      "funding_range": "Up to £180k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "open",
+      "url": "https://www.apcuk.co.uk/drive35/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation", "Supply Chain"],
+      "focus_areas": ["SME growth", "Investor readiness"],
+      "trl_range": "4-6",
+      "eligibility": {
+        "organisation_types": ["SME"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": true
+      },
+      "grant_rate_percent": 70,
+      "description": "Accelerator programme for automotive SMEs with funding, mentoring, and investor connections.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "SME ecosystem development"
+      }
+    },
+    {
+      "id": "ATL-008",
+      "title": "Automotive Transformation Fund (ATF)",
+      "source": "Advanced Propulsion Centre",
+      "source_tier": 1,
+      "funding_body": "APC",
+      "programme": "ATF",
+      "funding_amount_gbp": 500000000,
+      "funding_range": "£10m-£100m+ per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "open",
+      "url": "https://www.apcuk.co.uk/atf/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation", "Supply Chain"],
+      "focus_areas": ["Gigafactories", "Battery manufacturing", "EV production"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 30,
+      "description": "Capital funding for large-scale manufacturing investments in zero-emission vehicle supply chain.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "Manufacturing infrastructure rather than innovation"
+      }
+    },
+    {
+      "id": "ATL-009",
+      "title": "CAM Pathfinder - Feasibility Studies",
+      "source": "Centre for Connected & Autonomous Vehicles",
+      "source_tier": 1,
+      "funding_body": "CCAV/Innovate UK",
+      "programme": "CAM Pathfinder",
+      "funding_amount_gbp": 2000000,
+      "funding_range": "£50k-£250k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/organisations/centre-for-connected-and-autonomous-vehicles",
+      "modes": ["Highways", "Rail", "Aviation"],
+      "strategic_themes": ["Autonomy", "Safety"],
+      "focus_areas": ["Autonomous vehicles", "Connected mobility", "Regulatory pathways"],
+      "trl_range": "2-4",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation", "Local Authority"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Feasibility studies for connected and automated mobility concepts, business models, and regulatory approaches.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Direct alignment with autonomy strategic theme"
+      }
+    },
+    {
+      "id": "ATL-010",
+      "title": "CAM Pathfinder - Enable & Demonstrate",
+      "source": "Centre for Connected & Autonomous Vehicles",
+      "source_tier": 1,
+      "funding_body": "CCAV/Innovate UK",
+      "programme": "CAM Pathfinder",
+      "funding_amount_gbp": 50000000,
+      "funding_range": "£1m-£10m per project",
+      "deadline": "2026-03-31",
+      "deadline_type": "competition",
+      "status": "upcoming",
+      "url": "https://www.gov.uk/government/organisations/centre-for-connected-and-autonomous-vehicles",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Autonomy", "Safety", "People Experience"],
+      "focus_areas": ["Autonomous shuttles", "Self-driving freight", "Public trials"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Local Authority"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Large-scale demonstrations of connected and automated mobility in real-world environments.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "High-profile autonomous mobility demonstrations"
+      }
+    },
+    {
+      "id": "ATL-011",
+      "title": "National Highways Innovation Open Call 2025",
+      "source": "National Highways",
+      "source_tier": 1,
+      "funding_body": "National Highways",
+      "programme": "Designated Fund",
+      "funding_amount_gbp": 89000000,
+      "funding_range": "Variable - staged funding",
+      "deadline": "2025-12-08",
+      "deadline_type": "competition",
+      "status": "closing",
+      "url": "https://nationalhighways.co.uk/innovation/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Safety", "People Experience", "Decarbonisation"],
+      "focus_areas": ["Journey time", "Road safety", "Asset resilience", "Worker safety"],
+      "trl_range": "3-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Five priority challenges: customer journey experience, live traffic interface risks, asset resilience, occupational health, road safety.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Direct highways innovation partnership opportunity"
+      }
+    },
+    {
+      "id": "ATL-012",
+      "title": "Zero Emission Road Freight Demonstrator (ZERFD)",
+      "source": "DfT / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "ZERFD",
+      "funding_amount_gbp": 200000000,
+      "funding_range": "Programme-level",
+      "deadline": "2026-03-31",
+      "deadline_type": "programme",
+      "status": "ongoing",
+      "url": "https://www.gov.uk/government/publications/zero-emission-road-freight-demonstrator",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Electric HGVs", "Hydrogen HGVs", "Charging infrastructure"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Large-scale demonstration of zero-emission HGVs with 300+ vehicles and 54 infrastructure sites.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Major freight decarbonisation programme"
+      }
+    },
+    {
+      "id": "ATL-013",
+      "title": "Ofgem Strategic Innovation Fund Round 5 - Discovery",
+      "source": "Ofgem",
+      "source_tier": 1,
+      "funding_body": "Ofgem",
+      "programme": "Strategic Innovation Fund",
+      "funding_amount_gbp": 30000000,
+      "funding_range": "Up to £150k per project",
+      "deadline": "2025-05-31",
+      "deadline_type": "competition",
+      "status": "upcoming",
+      "url": "https://www.ofgem.gov.uk/energy-policy-and-regulation/policy-and-regulatory-programmes/network-price-controls-2021-2028-riio-2/network-innovation-under-riio-2/strategic-innovation-fund-sif",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["EV charging", "V2X", "Smart grids", "Transport electrification"],
+      "trl_range": "2-4",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 90,
+      "description": "Early-stage innovation for net zero energy systems including transport electrification and grid integration.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Energy-transport integration critical for electrification"
+      }
+    },
+    {
+      "id": "ATL-014",
+      "title": "Ofgem SIF - Alpha/Beta Phases",
+      "source": "Ofgem",
+      "source_tier": 1,
+      "funding_body": "Ofgem",
+      "programme": "Strategic Innovation Fund",
+      "funding_amount_gbp": 100000000,
+      "funding_range": "£500k-£10m per project",
+      "deadline": "2025-09-30",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.ofgem.gov.uk/",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Grid flexibility", "Heat networks", "Whole system"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Network Operator", "Business"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 90,
+      "description": "Development and demonstration phases for strategic energy innovation projects.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Energy system innovation with transport applications"
+      }
+    },
+    {
+      "id": "ATL-015",
+      "title": "SBRI - Accessible Solutions for Disrupted Journeys",
+      "source": "DfT / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "SBRI",
+      "funding_amount_gbp": 1000000,
+      "funding_range": "Up to £100k per project",
+      "deadline": "2025-06-30",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/",
+      "modes": ["Rail", "Highways", "Aviation", "Maritime"],
+      "strategic_themes": ["People Experience"],
+      "focus_areas": ["Accessibility", "Passenger information", "Disruption management"],
+      "trl_range": "3-6",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Physical and digital solutions to help vulnerable users during transport disruptions.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "People experience focus with accessibility emphasis"
+      }
+    },
+    {
+      "id": "ATL-016",
+      "title": "SBRI - Geospatial Data for Transport",
+      "source": "DfT / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "SBRI",
+      "funding_amount_gbp": 2000000,
+      "funding_range": "Up to £75k per project (Phase 1)",
+      "deadline": "2025-06-30",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Autonomy", "Safety"],
+      "focus_areas": ["Geospatial analytics", "Digital twins", "Location intelligence"],
+      "trl_range": "3-5",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Using geospatial data and analytics to solve transport challenges.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Digital and data capabilities across modes"
+      }
+    },
+    {
+      "id": "ATL-017",
+      "title": "Transport Decarbonisation Demonstrators",
+      "source": "DfT / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "Place-based Demonstrators",
+      "funding_amount_gbp": 2000000,
+      "funding_range": "£200k-£500k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/publications/transport-decarbonisation-plan",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Decarbonisation", "People Experience"],
+      "focus_areas": ["Local transport", "Modal shift", "Active travel"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Local Authority", "Business"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Place-based demonstrations of transport decarbonisation solutions with local authorities.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Local authority engagement and demonstration"
+      }
+    },
+    {
+      "id": "ATL-018",
+      "title": "Freight Innovation Fund - Round 5",
+      "source": "DfT / Innovate UK",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "Freight Innovation Fund",
+      "funding_amount_gbp": 1500000,
+      "funding_range": "£50k-£200k per project",
+      "deadline": "2026-03-31",
+      "deadline_type": "competition",
+      "status": "upcoming",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/",
+      "modes": ["Highways", "Rail", "Maritime"],
+      "strategic_themes": ["Decarbonisation", "Autonomy"],
+      "focus_areas": ["Freight efficiency", "Logistics innovation", "Last-mile delivery"],
+      "trl_range": "4-6",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Innovation in freight and logistics including sensors, AI, electric trailers, and port operations.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Cross-modal freight innovation"
+      }
+    },
+    {
+      "id": "ATL-019",
+      "title": "DASA Open Call for Innovation CY2025",
+      "source": "Defence & Security Accelerator",
+      "source_tier": 1,
+      "funding_body": "DASA",
+      "programme": "Open Call",
+      "funding_amount_gbp": 20000000,
+      "funding_range": "£50k-£500k per project",
+      "deadline": "2025-10-31",
+      "deadline_type": "rolling",
+      "status": "open",
+      "url": "https://www.gov.uk/government/organisations/defence-and-security-accelerator",
+      "modes": ["Aviation", "Maritime", "Highways"],
+      "strategic_themes": ["Autonomy", "Safety"],
+      "focus_areas": ["Autonomous systems", "Propulsion", "Navigation"],
+      "trl_range": "2-6",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Defence and security innovation with dual-use transport applications including autonomous navigation and propulsion.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Dual-use technology with transport applications"
+      }
+    },
+    {
+      "id": "ATL-020",
+      "title": "DASA Autonomy in a Dynamic World",
+      "source": "Defence & Security Accelerator",
+      "source_tier": 1,
+      "funding_body": "DASA",
+      "programme": "Themed Competition",
+      "funding_amount_gbp": 2100000,
+      "funding_range": "Up to £100k per project",
+      "deadline": "2025-06-30",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/organisations/defence-and-security-accelerator",
+      "modes": ["Aviation", "Highways"],
+      "strategic_themes": ["Autonomy"],
+      "focus_areas": ["Autonomous vehicles", "Harsh environments", "Human-autonomy teaming"],
+      "trl_range": "3-5",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Autonomous systems for harsh and dynamic environments with human-autonomy teaming.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Autonomy in challenging conditions"
+      }
+    },
+    {
+      "id": "ATL-021",
+      "title": "Horizon Europe CL5 - Next-gen CCAM Perception",
+      "source": "European Commission",
+      "source_tier": 1,
+      "funding_body": "Horizon Europe",
+      "programme": "Cluster 5 Climate",
+      "funding_amount_gbp": 6800000,
+      "funding_range": "€8m total",
+      "deadline": "2026-01-20",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Autonomy", "Safety"],
+      "focus_areas": ["Environment perception", "Sensor fusion", "CCAM"],
+      "trl_range": "4-6",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Next-generation environment perception systems for connected cooperative automated mobility.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "CCAM technology development"
+      }
+    },
+    {
+      "id": "ATL-022",
+      "title": "Horizon Europe CL5 - Resilient Transport Infrastructure",
+      "source": "European Commission",
+      "source_tier": 1,
+      "funding_body": "Horizon Europe",
+      "programme": "Cluster 5 Climate",
+      "funding_amount_gbp": 18700000,
+      "funding_range": "€22m total",
+      "deadline": "2026-01-20",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Safety", "Decarbonisation"],
+      "focus_areas": ["Infrastructure resilience", "Climate adaptation", "Construction innovation"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Innovative construction and maintenance for resilient transport infrastructure.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Infrastructure resilience core to transport strategy"
+      }
+    },
+    {
+      "id": "ATL-023",
+      "title": "Horizon Europe CL5 - Freight Digital Innovation",
+      "source": "European Commission",
+      "source_tier": 1,
+      "funding_body": "Horizon Europe",
+      "programme": "Cluster 5 Climate",
+      "funding_amount_gbp": 12750000,
+      "funding_range": "€15m total",
+      "deadline": "2026-01-20",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "modes": ["Highways", "Rail", "Maritime"],
+      "strategic_themes": ["Autonomy", "Decarbonisation"],
+      "focus_areas": ["Digital freight", "Logistics AI", "Multimodal integration"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Accelerating freight transport digital innovation for efficiency and decarbonisation.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Cross-modal freight digitalization"
+      }
+    },
+    {
+      "id": "ATL-024",
+      "title": "Horizon Europe CL5 - Innovative Air Mobility",
+      "source": "European Commission",
+      "source_tier": 1,
+      "funding_body": "Horizon Europe",
+      "programme": "Cluster 5 Climate",
+      "funding_amount_gbp": 8500000,
+      "funding_range": "€10m total",
+      "deadline": "2026-01-20",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Autonomy", "Decarbonisation"],
+      "focus_areas": ["Urban air mobility", "eVTOL", "Airspace integration"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Innovative air mobility for urban and peri-urban transport including eVTOL and drones.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Emerging aviation modes"
+      }
+    },
+    {
+      "id": "ATL-025",
+      "title": "Horizon Europe CL5 - Inland Waterway Multimodal",
+      "source": "European Commission",
+      "source_tier": 1,
+      "funding_body": "Horizon Europe",
+      "programme": "Cluster 5 Climate",
+      "funding_amount_gbp": 8500000,
+      "funding_range": "€10m total",
+      "deadline": "2026-01-20",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/",
+      "modes": ["Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Inland waterways", "Multimodal logistics", "Modal shift"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Inland waterway transport integration in multimodal logistics chains.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Limited UK inland waterway focus"
+      }
+    },
+    {
+      "id": "ATL-026",
+      "title": "Europe's Rail Joint Undertaking - Flagship 6",
+      "source": "Europe's Rail JU",
+      "source_tier": 1,
+      "funding_body": "Europe's Rail",
+      "programme": "Flagship Projects",
+      "funding_amount_gbp": 42500000,
+      "funding_range": "€50m total",
+      "deadline": "2025-09-30",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://rail-research.europa.eu/",
+      "modes": ["Rail"],
+      "strategic_themes": ["Decarbonisation", "Autonomy", "People Experience"],
+      "focus_areas": ["Rail digitalisation", "ERTMS", "Capacity optimisation"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Large-scale rail innovation projects for digitalisation, automation, and passenger experience.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Core rail innovation programme"
+      }
+    },
+    {
+      "id": "ATL-027",
+      "title": "Transport Scotland HGV Market Readiness - SME Fleet Analysis",
+      "source": "Transport Scotland",
+      "source_tier": 1,
+      "funding_body": "Transport Scotland",
+      "programme": "HGV Market Readiness Fund",
+      "funding_amount_gbp": 1000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-09",
+      "deadline_type": "competition",
+      "status": "closing",
+      "url": "https://www.transport.gov.scot/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Fleet electrification", "SME support", "Charging infrastructure"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["SME"],
+        "geographic": "Scotland",
+        "collaboration_required": false,
+        "sme_specific": true
+      },
+      "grant_rate_percent": 100,
+      "description": "Support for Scottish SME fleet operators to analyse and plan zero-emission HGV transition.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Scotland-specific but transferable learnings"
+      }
+    },
+    {
+      "id": "ATL-028",
+      "title": "Transport Scotland HGV Consortium Builder",
+      "source": "Transport Scotland",
+      "source_tier": 1,
+      "funding_body": "Transport Scotland",
+      "programme": "HGV Market Readiness Fund",
+      "funding_amount_gbp": 1000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.transport.gov.scot/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Consortium building", "Shared infrastructure", "Fleet collaboration"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "Scotland",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Support for Scottish hauliers to form consortia for shared zero-emission charging infrastructure.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Consortium models transferable across UK"
+      }
+    },
+    {
+      "id": "ATL-029",
+      "title": "ScotZEB Zero Emission Bus Challenge Fund Phase 2",
+      "source": "Transport Scotland",
+      "source_tier": 1,
+      "funding_body": "Transport Scotland",
+      "programme": "ScotZEB",
+      "funding_amount_gbp": 80000000,
+      "funding_range": "Variable per operator",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.transport.gov.scot/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Electric buses", "Bus decarbonisation", "Depot infrastructure"],
+      "trl_range": "8-9",
+      "eligibility": {
+        "organisation_types": ["Bus Operator"],
+        "geographic": "Scotland",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 75,
+      "description": "Capital funding for Scottish bus operators to purchase zero-emission buses and charging infrastructure.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "Deployment rather than innovation focus"
+      }
+    },
+    {
+      "id": "ATL-030",
+      "title": "TfGM Bee Network Innovation Partnership",
+      "source": "Transport for Greater Manchester",
+      "source_tier": 1,
+      "funding_body": "TfGM",
+      "programme": "Bee Network",
+      "funding_amount_gbp": 50000000,
+      "funding_range": "Variable",
+      "deadline": "2026-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://bee.network/",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Decarbonisation", "People Experience", "Autonomy"],
+      "focus_areas": ["Integrated transport", "Electric buses", "Tram-train"],
+      "trl_range": "6-9",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "Greater Manchester",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Innovation partnerships supporting UK's first fully integrated zero-emission transport system.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Exemplar integrated transport system"
+      }
+    },
+    {
+      "id": "ATL-031",
+      "title": "TfL Innovation Collaboration Framework",
+      "source": "Transport for London",
+      "source_tier": 1,
+      "funding_body": "TfL",
+      "programme": "Innovation Framework",
+      "funding_amount_gbp": 10000000,
+      "funding_range": "Variable",
+      "deadline": "2028-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://tfl.gov.uk/info-for/business-and-developers/innovation",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Safety", "People Experience", "Autonomy"],
+      "focus_areas": ["Bus safety", "Freight innovation", "Urban mobility"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "London",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "4-year innovation collaboration framework with Mercedes-Benz and Sopra Steria.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "London-specific but scalable innovations"
+      }
+    },
+    {
+      "id": "ATL-032",
+      "title": "TfL Bus Safety Innovation Challenge",
+      "source": "Transport for London",
+      "source_tier": 1,
+      "funding_body": "TfL",
+      "programme": "Safety Innovation",
+      "funding_amount_gbp": 2000000,
+      "funding_range": "£50k-£500k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://tfl.gov.uk/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Safety"],
+      "focus_areas": ["Bus safety", "Vision Zero", "Vulnerable road users"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "London",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Innovation challenge supporting Vision Zero with focus on bus passenger and pedestrian safety.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Safety innovation with national relevance"
+      }
+    },
+    {
+      "id": "ATL-033",
+      "title": "SAF Revenue Certainty Mechanism - Round 1",
+      "source": "DfT",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "SAF Mandate",
+      "funding_amount_gbp": 500000000,
+      "funding_range": "10-year contracts",
+      "deadline": "2026-12-31",
+      "deadline_type": "competition",
+      "status": "upcoming",
+      "url": "https://www.gov.uk/government/consultations/sustainable-aviation-fuels-revenue-certainty-mechanism",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Sustainable aviation fuel", "Power-to-liquid", "Advanced biofuels"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Contract-for-difference mechanism providing revenue certainty for SAF producers (excluding HEFA).",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Aviation fuel production rather than innovation"
+      }
+    },
+    {
+      "id": "ATL-034",
+      "title": "Advanced Fuels Fund 2025-26",
+      "source": "DfT",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "Advanced Fuels Fund",
+      "funding_amount_gbp": 63000000,
+      "funding_range": "£1m-£10m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/publications/apply-for-the-advanced-fuels-fund",
+      "modes": ["Aviation", "Maritime", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["SAF production", "Maritime fuels", "HVO"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Capital funding for advanced fuels production plants including SAF and maritime fuels.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Cross-modal fuel production"
+      }
+    },
+    {
+      "id": "ATL-035",
+      "title": "DESNZ Hydrogen BECCS Innovation Programme",
+      "source": "DESNZ",
+      "source_tier": 1,
+      "funding_body": "DESNZ",
+      "programme": "Net Zero Innovation Portfolio",
+      "funding_amount_gbp": 30000000,
+      "funding_range": "£2m-£10m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/collections/net-zero-innovation-portfolio",
+      "modes": ["Maritime", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Biohydrogen", "Carbon capture", "Waste-to-hydrogen"],
+      "trl_range": "4-6",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Biohydrogen production from waste with integrated carbon capture for transport applications.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Hydrogen production for transport sector"
+      }
+    },
+    {
+      "id": "ATL-036",
+      "title": "DESNZ Industrial Hydrogen Accelerator",
+      "source": "DESNZ",
+      "source_tier": 1,
+      "funding_body": "DESNZ",
+      "programme": "Net Zero Innovation Portfolio",
+      "funding_amount_gbp": 26000000,
+      "funding_range": "£1m-£5m per project",
+      "deadline": "2025-09-30",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/collections/net-zero-innovation-portfolio",
+      "modes": ["Highways", "Rail", "Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Industrial hydrogen", "Fuel cells", "Hydrogen distribution"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Hydrogen applications for hard-to-decarbonize sectors including transport.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Cross-sector hydrogen with transport applications"
+      }
+    },
+    {
+      "id": "ATL-037",
+      "title": "DESNZ Flexibility Innovation Programme",
+      "source": "DESNZ",
+      "source_tier": 1,
+      "funding_body": "DESNZ",
+      "programme": "Net Zero Innovation Portfolio",
+      "funding_amount_gbp": 65000000,
+      "funding_range": "£500k-£5m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/collections/net-zero-innovation-portfolio",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["V2X", "Smart charging", "Grid flexibility", "Energy storage"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Vehicle-to-everything and smart energy systems for transport electrification.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Critical energy-transport integration"
+      }
+    },
+    {
+      "id": "ATL-038",
+      "title": "UKRI DARe Research Hub",
+      "source": "UKRI / EPSRC",
+      "source_tier": 1,
+      "funding_body": "EPSRC",
+      "programme": "Research Hubs",
+      "funding_amount_gbp": 10000000,
+      "funding_range": "Hub funding",
+      "deadline": "2025-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://epsrc.ukri.org/",
+      "modes": ["Rail", "Highways"],
+      "strategic_themes": ["Safety", "Decarbonisation"],
+      "focus_areas": ["Infrastructure resilience", "Climate adaptation", "Net zero transport"],
+      "trl_range": "1-4",
+      "eligibility": {
+        "organisation_types": ["Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 80,
+      "description": "Decarbonised Adaptable Resilient Transport Infrastructures research hub.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Fundamental research with strategic relevance"
+      }
+    },
+    {
+      "id": "ATL-039",
+      "title": "UKRI TransiT Digital Twinning Hub",
+      "source": "UKRI / EPSRC",
+      "source_tier": 1,
+      "funding_body": "EPSRC",
+      "programme": "Digital Twinning",
+      "funding_amount_gbp": 46000000,
+      "funding_range": "Hub funding",
+      "deadline": "2027-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://epsrc.ukri.org/",
+      "modes": ["Rail", "Highways", "Aviation", "Maritime"],
+      "strategic_themes": ["Autonomy", "Safety"],
+      "focus_areas": ["Digital twins", "AI", "Predictive maintenance", "System modelling"],
+      "trl_range": "2-5",
+      "eligibility": {
+        "organisation_types": ["Research Organisation", "Business"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 80,
+      "description": "Cross-modal digital twinning research hub with 8 universities and 67 industry partners.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Cross-modal digital innovation"
+      }
+    },
+    {
+      "id": "ATL-040",
+      "title": "EIC Pathfinder Open 2025",
+      "source": "European Innovation Council",
+      "source_tier": 1,
+      "funding_body": "EIC",
+      "programme": "Pathfinder",
+      "funding_amount_gbp": 121000000,
+      "funding_range": "Up to €4m per project",
+      "deadline": "2025-10-15",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://eic.ec.europa.eu/",
+      "modes": ["Aviation", "Maritime", "Highways", "Rail"],
+      "strategic_themes": ["Autonomy", "Decarbonisation"],
+      "focus_areas": ["Radical innovation", "Deep tech", "Emerging technologies"],
+      "trl_range": "1-4",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "High-risk, high-reward research for radical new transport technologies.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Early-stage breakthrough technologies"
+      }
+    },
+    {
+      "id": "ATL-041",
+      "title": "EIC Transition Open 2025",
+      "source": "European Innovation Council",
+      "source_tier": 1,
+      "funding_body": "EIC",
+      "programme": "Transition",
+      "funding_amount_gbp": 83500000,
+      "funding_range": "Up to €2.5m per project",
+      "deadline": "2025-09-17",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://eic.ec.europa.eu/",
+      "modes": ["Aviation", "Maritime", "Highways", "Rail"],
+      "strategic_themes": ["Autonomy", "Decarbonisation"],
+      "focus_areas": ["Technology maturation", "Market validation", "Proof of concept"],
+      "trl_range": "3-6",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "EU/Associated",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Bridging research results to market-ready innovation in transport.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Technology maturation support"
+      }
+    },
+    {
+      "id": "ATL-042",
+      "title": "Port Shore Power Development Fund",
+      "source": "DfT / UK SHORE",
+      "source_tier": 1,
+      "funding_body": "DfT",
+      "programme": "UK SHORE",
+      "funding_amount_gbp": 20000000,
+      "funding_range": "£1m-£5m per port",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.gov.uk/government/publications/uk-shore",
+      "modes": ["Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Shore power", "Port electrification", "Grid connection"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Port Authority", "Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Capital funding for shore power infrastructure at UK ports.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Port infrastructure development"
+      }
+    },
+    {
+      "id": "ATL-043",
+      "title": "Network Rail Innovation Programme",
+      "source": "Network Rail",
+      "source_tier": 1,
+      "funding_body": "Network Rail",
+      "programme": "R&D",
+      "funding_amount_gbp": 30000000,
+      "funding_range": "Variable",
+      "deadline": "2026-03-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.networkrail.co.uk/",
+      "modes": ["Rail"],
+      "strategic_themes": ["Safety", "People Experience", "Decarbonisation"],
+      "focus_areas": ["Track monitoring", "Signalling", "Passenger information"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Rail infrastructure innovation including asset monitoring, signalling, and passenger systems.",
+      "cpc_relevance": {
+        "score": 9,
+        "rationale": "Core rail innovation opportunity"
+      }
+    },
+    {
+      "id": "ATL-044",
+      "title": "Rail Safety and Standards Board Research",
+      "source": "RSSB",
+      "source_tier": 1,
+      "funding_body": "RSSB",
+      "programme": "Research Programme",
+      "funding_amount_gbp": 15000000,
+      "funding_range": "£50k-£500k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.rssb.co.uk/",
+      "modes": ["Rail"],
+      "strategic_themes": ["Safety"],
+      "focus_areas": ["Rail safety", "Human factors", "Standards development"],
+      "trl_range": "2-5",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Rail safety research including human factors, system safety, and standards.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Rail safety expertise"
+      }
+    },
+    {
+      "id": "ATL-045",
+      "title": "HS2 Innovation Programme",
+      "source": "HS2 Ltd",
+      "source_tier": 1,
+      "funding_body": "HS2",
+      "programme": "Innovation",
+      "funding_amount_gbp": 25000000,
+      "funding_range": "Variable",
+      "deadline": "2026-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://www.hs2.org.uk/",
+      "modes": ["Rail"],
+      "strategic_themes": ["Decarbonisation", "Safety", "People Experience"],
+      "focus_areas": ["High-speed rail", "Construction innovation", "Digital railway"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Innovation opportunities within HS2 construction and operations.",
+      "cpc_relevance": {
+        "score": 8,
+        "rationale": "Major rail infrastructure programme"
+      }
+    },
+    {
+      "id": "ATL-046",
+      "title": "DESNZ Industrial Decarbonisation Challenge",
+      "source": "DESNZ / UKRI",
+      "source_tier": 2,
+      "funding_body": "UKRI",
+      "programme": "Industrial Strategy Challenge Fund",
+      "funding_amount_gbp": 126000000,
+      "funding_range": "£5m-£30m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "ongoing",
+      "url": "https://www.ukri.org/",
+      "modes": ["Maritime", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Industrial clusters", "CCUS", "Hydrogen"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Industrial decarbonisation with transport-adjacent applications in ports and logistics.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Adjacent sector with transport links"
+      }
+    },
+    {
+      "id": "ATL-047",
+      "title": "DESNZ CCUS Innovation 2.0",
+      "source": "DESNZ",
+      "source_tier": 2,
+      "funding_body": "DESNZ",
+      "programme": "CCUS",
+      "funding_amount_gbp": 20000000,
+      "funding_range": "£500k-£5m per project",
+      "deadline": "2025-09-30",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/collections/net-zero-innovation-portfolio",
+      "modes": ["Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Carbon capture", "CO2 transport", "Storage"],
+      "trl_range": "4-6",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Carbon capture, utilisation, and storage with shipping and infrastructure applications.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "CO2 transport infrastructure"
+      }
+    },
+    {
+      "id": "ATL-048",
+      "title": "DESNZ Direct Air Capture & GGR",
+      "source": "DESNZ",
+      "source_tier": 2,
+      "funding_body": "DESNZ",
+      "programme": "GGR Programme",
+      "funding_amount_gbp": 60000000,
+      "funding_range": "£2m-£15m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/collections/net-zero-innovation-portfolio",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Direct air capture", "Carbon removal", "Net zero aviation"],
+      "trl_range": "3-6",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Greenhouse gas removal technologies for aviation carbon offsetting.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Aviation emissions pathway"
+      }
+    },
+    {
+      "id": "ATL-049",
+      "title": "Defra Land Use R&D Programme",
+      "source": "Defra",
+      "source_tier": 2,
+      "funding_body": "Defra",
+      "programme": "Land Use",
+      "funding_amount_gbp": 6600000,
+      "funding_range": "£100k-£500k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Biofuels", "Land management", "Sustainable feedstocks"],
+      "trl_range": "2-5",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 80,
+      "description": "Sustainable land use for biofuel feedstocks and transport applications.",
+      "cpc_relevance": {
+        "score": 4,
+        "rationale": "Indirect transport fuel links"
+      }
+    },
+    {
+      "id": "ATL-050",
+      "title": "DBT Made Smarter Innovation",
+      "source": "DBT",
+      "source_tier": 2,
+      "funding_body": "DBT/Innovate UK",
+      "programme": "Made Smarter",
+      "funding_amount_gbp": 30000000,
+      "funding_range": "£100k-£2m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.madesmarter.uk/",
+      "modes": ["Rail", "Highways", "Maritime"],
+      "strategic_themes": ["Autonomy", "Supply Chain"],
+      "focus_areas": ["Digital manufacturing", "Industry 4.0", "AI in manufacturing"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Digital manufacturing and Industry 4.0 for transport supply chains.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Manufacturing innovation for transport sector"
+      }
+    },
+    {
+      "id": "ATL-051",
+      "title": "DSIT AI Safety Research",
+      "source": "DSIT",
+      "source_tier": 2,
+      "funding_body": "DSIT",
+      "programme": "AI Research",
+      "funding_amount_gbp": 50000000,
+      "funding_range": "£500k-£5m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+      "modes": ["Aviation", "Highways", "Rail"],
+      "strategic_themes": ["Autonomy", "Safety"],
+      "focus_areas": ["AI safety", "Autonomous systems", "Machine learning"],
+      "trl_range": "2-5",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 80,
+      "description": "AI safety research with applications in autonomous transport systems.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "AI safety critical for autonomous mobility"
+      }
+    },
+    {
+      "id": "ATL-052",
+      "title": "MOD Defence Innovation Loans",
+      "source": "MOD",
+      "source_tier": 2,
+      "funding_body": "MOD",
+      "programme": "Innovation Loans",
+      "funding_amount_gbp": 25000000,
+      "funding_range": "£250k-£1.6m per loan",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-defence",
+      "modes": ["Aviation", "Maritime"],
+      "strategic_themes": ["Autonomy", "Safety"],
+      "focus_areas": ["Dual-use technology", "Propulsion", "Materials"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["SME"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": true
+      },
+      "grant_rate_percent": 0,
+      "description": "Interest-free loans for SMEs developing dual-use technologies.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "Dual-use with transport applications"
+      }
+    },
+    {
+      "id": "ATL-053",
+      "title": "Home Office Security Innovation",
+      "source": "Home Office",
+      "source_tier": 2,
+      "funding_body": "Home Office",
+      "programme": "Security Innovation",
+      "funding_amount_gbp": 10000000,
+      "funding_range": "£50k-£500k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/organisations/home-office",
+      "modes": ["Aviation", "Rail"],
+      "strategic_themes": ["Safety"],
+      "focus_areas": ["Transport security", "Border technology", "Surveillance"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "Transport security innovation for aviation and rail.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Transport security applications"
+      }
+    },
+    {
+      "id": "ATL-054",
+      "title": "FCDO Climate Finance Innovation",
+      "source": "FCDO",
+      "source_tier": 2,
+      "funding_body": "FCDO",
+      "programme": "Climate Finance",
+      "funding_amount_gbp": 40000000,
+      "funding_range": "£1m-£10m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office",
+      "modes": ["Aviation", "Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["International shipping", "Aviation emissions", "Developing countries"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business", "NGO"],
+        "geographic": "UK/International",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "International transport decarbonisation with focus on developing countries.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "International focus beyond UK"
+      }
+    },
+    {
+      "id": "ATL-055",
+      "title": "Scottish National Investment Bank - Net Zero",
+      "source": "Scottish National Investment Bank",
+      "source_tier": 2,
+      "funding_body": "SNIB",
+      "programme": "Net Zero Mission",
+      "funding_amount_gbp": 200000000,
+      "funding_range": "£1m-£50m per investment",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.thebank.scot/",
+      "modes": ["Highways", "Maritime", "Rail"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Green transport", "Clean infrastructure", "Net zero"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "Scotland",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Patient capital investment for net zero transport infrastructure in Scotland.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "Investment rather than grant funding"
+      }
+    },
+    {
+      "id": "ATL-056",
+      "title": "UK Infrastructure Bank - Transport Decarbonisation",
+      "source": "UK Infrastructure Bank",
+      "source_tier": 2,
+      "funding_body": "UKIB",
+      "programme": "Transport",
+      "funding_amount_gbp": 500000000,
+      "funding_range": "£10m-£100m per investment",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.ukib.org.uk/",
+      "modes": ["Rail", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["EV charging", "Clean transport", "Infrastructure finance"],
+      "trl_range": "8-9",
+      "eligibility": {
+        "organisation_types": ["Business", "Local Authority"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Debt and equity investment for transport decarbonisation infrastructure.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "Infrastructure investment pathway"
+      }
+    },
+    {
+      "id": "ATL-057",
+      "title": "British Business Bank Future Fund",
+      "source": "British Business Bank",
+      "source_tier": 2,
+      "funding_body": "BBB",
+      "programme": "Future Fund",
+      "funding_amount_gbp": 100000000,
+      "funding_range": "£500k-£5m per investment",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.british-business-bank.co.uk/",
+      "modes": ["Highways", "Aviation"],
+      "strategic_themes": ["Autonomy", "Decarbonisation"],
+      "focus_areas": ["Deep tech", "Clean tech", "Scale-up"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["SME"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": true
+      },
+      "grant_rate_percent": 0,
+      "description": "Convertible loans for innovative transport technology companies.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "SME finance pathway"
+      }
+    },
+    {
+      "id": "ATL-058",
+      "title": "EU Innovation Fund IF25 - Net Zero Technologies",
+      "source": "European Commission",
+      "source_tier": 3,
+      "funding_body": "EU Innovation Fund",
+      "programme": "IF25",
+      "funding_amount_gbp": 2465000000,
+      "funding_range": "€50m-€500m per project",
+      "deadline": "2025-10-23",
+      "deadline_type": "competition",
+      "status": "open",
+      "url": "https://cinea.ec.europa.eu/programmes/innovation-fund_en",
+      "modes": ["Maritime", "Aviation", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Clean hydrogen", "SAF", "Maritime fuels", "CCUS"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "EU/EEA",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 60,
+      "description": "Large-scale demonstration of net zero technologies for transport.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Major EU funding for transport decarbonisation"
+      }
+    },
+    {
+      "id": "ATL-059",
+      "title": "EU Hydrogen Bank - 3rd Auction",
+      "source": "European Commission",
+      "source_tier": 3,
+      "funding_body": "EU Hydrogen Bank",
+      "programme": "Hydrogen Auctions",
+      "funding_amount_gbp": 1105000000,
+      "funding_range": "€1-€4.50/kg premium",
+      "deadline": "2025-06-30",
+      "deadline_type": "auction",
+      "status": "upcoming",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_23_5982",
+      "modes": ["Maritime", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Green hydrogen", "Hydrogen production", "Electrolyser"],
+      "trl_range": "8-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "EU/EEA",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Competitive auction for hydrogen production premium support.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "Hydrogen production for transport"
+      }
+    },
+    {
+      "id": "ATL-060",
+      "title": "US DOE Clean Energy Demonstration",
+      "source": "US Department of Energy",
+      "source_tier": 3,
+      "funding_body": "US DOE",
+      "programme": "Clean Energy",
+      "funding_amount_gbp": 850000000,
+      "funding_range": "$50m-$500m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.energy.gov/",
+      "modes": ["Maritime", "Aviation", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Clean fuels", "Hydrogen", "Electric transport"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "US (UK partners)",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "US clean energy demonstrations with international partnership opportunities.",
+      "cpc_relevance": {
+        "score": 4,
+        "rationale": "International partnership opportunity"
+      }
+    },
+    {
+      "id": "ATL-061",
+      "title": "NATO Energy Security Research",
+      "source": "NATO",
+      "source_tier": 3,
+      "funding_body": "NATO STO",
+      "programme": "Energy Security",
+      "funding_amount_gbp": 20000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.sto.nato.int/",
+      "modes": ["Aviation", "Maritime"],
+      "strategic_themes": ["Safety", "Decarbonisation"],
+      "focus_areas": ["Military transport", "Alternative fuels", "Energy resilience"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business", "Research Organisation"],
+        "geographic": "NATO members",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 100,
+      "description": "NATO research on military transport energy security.",
+      "cpc_relevance": {
+        "score": 4,
+        "rationale": "Defence transport research"
+      }
+    },
+    {
+      "id": "ATL-062",
+      "title": "Global Maritime Forum Decarbonisation",
+      "source": "Global Maritime Forum",
+      "source_tier": 3,
+      "funding_body": "GMF",
+      "programme": "Getting to Zero Coalition",
+      "funding_amount_gbp": 50000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.globalmaritimeforum.org/",
+      "modes": ["Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Zero-emission shipping", "Green corridors", "Alternative fuels"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "Global",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "International maritime decarbonisation coalition projects.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "International maritime partnerships"
+      }
+    },
+    {
+      "id": "ATL-063",
+      "title": "Clean Skies for Tomorrow Coalition",
+      "source": "World Economic Forum",
+      "source_tier": 3,
+      "funding_body": "WEF",
+      "programme": "Clean Skies",
+      "funding_amount_gbp": 30000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.weforum.org/",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["SAF", "Aviation decarbonisation", "Industry coalitions"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "Global",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Industry coalition for aviation SAF uptake and production.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "SAF industry engagement"
+      }
+    },
+    {
+      "id": "ATL-064",
+      "title": "IRENA Transport Electrification",
+      "source": "International Renewable Energy Agency",
+      "source_tier": 3,
+      "funding_body": "IRENA",
+      "programme": "Transport",
+      "funding_amount_gbp": 15000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.irena.org/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["EV deployment", "Charging infrastructure", "Renewable transport"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business", "Government"],
+        "geographic": "Global",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 80,
+      "description": "International transport electrification technical assistance.",
+      "cpc_relevance": {
+        "score": 4,
+        "rationale": "International policy engagement"
+      }
+    },
+    {
+      "id": "ATL-065",
+      "title": "World Bank Green Transport Fund",
+      "source": "World Bank",
+      "source_tier": 3,
+      "funding_body": "World Bank",
+      "programme": "Green Transport",
+      "funding_amount_gbp": 100000000,
+      "funding_range": "$5m-$50m per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.worldbank.org/",
+      "modes": ["Rail", "Highways"],
+      "strategic_themes": ["Decarbonisation", "People Experience"],
+      "focus_areas": ["Mass transit", "Electric buses", "Developing countries"],
+      "trl_range": "8-9",
+      "eligibility": {
+        "organisation_types": ["Government", "Business"],
+        "geographic": "Developing countries",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 70,
+      "description": "Green transport infrastructure in developing countries.",
+      "cpc_relevance": {
+        "score": 3,
+        "rationale": "International development focus"
+      }
+    },
+    {
+      "id": "ATL-066",
+      "title": "West Midlands Combined Authority - Mass Transit Innovation",
+      "source": "WMCA",
+      "source_tier": 4,
+      "funding_body": "WMCA",
+      "programme": "Transport Innovation",
+      "funding_amount_gbp": 100000000,
+      "funding_range": "Variable",
+      "deadline": "2028-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://www.wmca.org.uk/",
+      "modes": ["Rail", "Highways"],
+      "strategic_themes": ["Decarbonisation", "People Experience"],
+      "focus_areas": ["Metro extension", "Mass transit", "Integrated ticketing"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "West Midlands",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Mass transit innovation as part of £2.4bn West Midlands transport programme.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Regional transport innovation"
+      }
+    },
+    {
+      "id": "ATL-067",
+      "title": "West Yorkshire Combined Authority - Mass Transit",
+      "source": "WYCA",
+      "source_tier": 4,
+      "funding_body": "WYCA",
+      "programme": "Mass Transit",
+      "funding_amount_gbp": 80000000,
+      "funding_range": "Variable",
+      "deadline": "2030-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://www.westyorks-ca.gov.uk/",
+      "modes": ["Rail"],
+      "strategic_themes": ["Decarbonisation", "People Experience"],
+      "focus_areas": ["Light rail", "Bus rapid transit", "Mobility hubs"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "West Yorkshire",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Innovation opportunities within £2.1bn West Yorkshire mass transit programme.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Regional transport innovation"
+      }
+    },
+    {
+      "id": "ATL-068",
+      "title": "South Yorkshire Mayoral Combined Authority - Supertram",
+      "source": "SYMCA",
+      "source_tier": 4,
+      "funding_body": "SYMCA",
+      "programme": "Supertram Renewal",
+      "funding_amount_gbp": 50000000,
+      "funding_range": "Variable",
+      "deadline": "2027-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://southyorkshire-ca.gov.uk/",
+      "modes": ["Rail"],
+      "strategic_themes": ["Decarbonisation", "People Experience"],
+      "focus_areas": ["Tram modernisation", "Electrification", "Asset renewal"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "South Yorkshire",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Innovation as part of £530m Sheffield Supertram renewal programme.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Tram modernisation innovation"
+      }
+    },
+    {
+      "id": "ATL-069",
+      "title": "Transport for the North - Strategic Transport Plan",
+      "source": "Transport for the North",
+      "source_tier": 4,
+      "funding_body": "TfN",
+      "programme": "Strategic Plan",
+      "funding_amount_gbp": 30000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://transportforthenorth.com/",
+      "modes": ["Rail", "Highways"],
+      "strategic_themes": ["Decarbonisation", "People Experience"],
+      "focus_areas": ["Northern connectivity", "Rail freight", "Strategic roads"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business", "Local Authority"],
+        "geographic": "North of England",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Innovation supporting pan-Northern transport connectivity.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Regional strategic transport"
+      }
+    },
+    {
+      "id": "ATL-070",
+      "title": "Midlands Connect Innovation",
+      "source": "Midlands Connect",
+      "source_tier": 4,
+      "funding_body": "Midlands Connect",
+      "programme": "Innovation",
+      "funding_amount_gbp": 20000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://www.midlandsconnect.uk/",
+      "modes": ["Rail", "Highways"],
+      "strategic_themes": ["People Experience", "Autonomy"],
+      "focus_areas": ["Regional connectivity", "Smart motorways", "Rail capacity"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business", "Local Authority"],
+        "geographic": "Midlands",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Innovation for Midlands regional transport connectivity.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Regional transport innovation"
+      }
+    },
+    {
+      "id": "ATL-071",
+      "title": "Liverpool City Region Combined Authority - Transport",
+      "source": "LCRCA",
+      "source_tier": 4,
+      "funding_body": "LCRCA",
+      "programme": "Transport Innovation",
+      "funding_amount_gbp": 40000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://www.liverpoolcityregion-ca.gov.uk/",
+      "modes": ["Rail", "Maritime"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Merseyrail", "Port connectivity", "Hydrogen buses"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "Liverpool City Region",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Transport innovation including hydrogen buses and port connectivity.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Port and rail innovation"
+      }
+    },
+    {
+      "id": "ATL-072",
+      "title": "Tees Valley Combined Authority - Transport Decarbonisation",
+      "source": "TVCA",
+      "source_tier": 4,
+      "funding_body": "TVCA",
+      "programme": "Transport",
+      "funding_amount_gbp": 50000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://teesvalley-ca.gov.uk/",
+      "modes": ["Maritime", "Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["Hydrogen", "Freeport", "Industrial transport"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "Tees Valley",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Transport innovation linked to hydrogen and freeport development.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Industrial cluster with hydrogen focus"
+      }
+    },
+    {
+      "id": "ATL-073",
+      "title": "North East Combined Authority - Electric Vehicle Strategy",
+      "source": "NECA",
+      "source_tier": 4,
+      "funding_body": "NECA",
+      "programme": "EV Strategy",
+      "funding_amount_gbp": 25000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "ongoing",
+      "status": "ongoing",
+      "url": "https://www.northeastca.gov.uk/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["EV charging", "Electric buses", "Fleet electrification"],
+      "trl_range": "7-9",
+      "eligibility": {
+        "organisation_types": ["Business", "Local Authority"],
+        "geographic": "North East",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "EV infrastructure and fleet electrification in North East England.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "EV deployment focus"
+      }
+    },
+    {
+      "id": "ATL-074",
+      "title": "Railway Industry Association Innovation",
+      "source": "RIA",
+      "source_tier": 5,
+      "funding_body": "RIA",
+      "programme": "Innovation Programme",
+      "funding_amount_gbp": 5000000,
+      "funding_range": "£50k-£500k per project",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.riagb.org.uk/",
+      "modes": ["Rail"],
+      "strategic_themes": ["Supply Chain", "Decarbonisation"],
+      "focus_areas": ["Supply chain innovation", "SME support", "Rail technology"],
+      "trl_range": "4-7",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 50,
+      "description": "Rail supply chain innovation support through industry association.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Rail industry ecosystem"
+      }
+    },
+    {
+      "id": "ATL-075",
+      "title": "SMMT Automotive Innovation Network",
+      "source": "SMMT",
+      "source_tier": 5,
+      "funding_body": "SMMT",
+      "programme": "Innovation Network",
+      "funding_amount_gbp": 2000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.smmt.co.uk/",
+      "modes": ["Highways"],
+      "strategic_themes": ["Supply Chain", "Decarbonisation"],
+      "focus_areas": ["Automotive innovation", "EV transition", "Supply chain"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Automotive industry innovation network and collaboration support.",
+      "cpc_relevance": {
+        "score": 5,
+        "rationale": "Automotive industry engagement"
+      }
+    },
+    {
+      "id": "ATL-076",
+      "title": "Sustainable Aviation Coalition",
+      "source": "Sustainable Aviation",
+      "source_tier": 5,
+      "funding_body": "SA",
+      "programme": "Innovation",
+      "funding_amount_gbp": 3000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.sustainableaviation.co.uk/",
+      "modes": ["Aviation"],
+      "strategic_themes": ["Decarbonisation"],
+      "focus_areas": ["SAF", "Aviation decarbonisation", "Industry collaboration"],
+      "trl_range": "6-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": true,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "UK aviation industry decarbonisation coalition and innovation.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Aviation industry partnerships"
+      }
+    },
+    {
+      "id": "ATL-077",
+      "title": "UK Chamber of Shipping Innovation",
+      "source": "UK Chamber of Shipping",
+      "source_tier": 5,
+      "funding_body": "UKCoS",
+      "programme": "Maritime Innovation",
+      "funding_amount_gbp": 2000000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://www.ukchamberofshipping.com/",
+      "modes": ["Maritime"],
+      "strategic_themes": ["Decarbonisation", "Autonomy"],
+      "focus_areas": ["Maritime technology", "Crew welfare", "Digital shipping"],
+      "trl_range": "5-7",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Maritime industry innovation support and collaboration.",
+      "cpc_relevance": {
+        "score": 6,
+        "rationale": "Maritime industry engagement"
+      }
+    },
+    {
+      "id": "ATL-078",
+      "title": "Logistics UK Innovation",
+      "source": "Logistics UK",
+      "source_tier": 5,
+      "funding_body": "Logistics UK",
+      "programme": "Innovation",
+      "funding_amount_gbp": 1500000,
+      "funding_range": "Variable",
+      "deadline": "2025-12-31",
+      "deadline_type": "rolling",
+      "status": "ongoing",
+      "url": "https://logistics.org.uk/",
+      "modes": ["Highways", "Rail"],
+      "strategic_themes": ["Decarbonisation", "Autonomy"],
+      "focus_areas": ["Freight innovation", "Last-mile delivery", "HGV decarbonisation"],
+      "trl_range": "5-8",
+      "eligibility": {
+        "organisation_types": ["Business"],
+        "geographic": "UK",
+        "collaboration_required": false,
+        "sme_specific": false
+      },
+      "grant_rate_percent": 0,
+      "description": "Logistics industry innovation and technology adoption support.",
+      "cpc_relevance": {
+        "score": 7,
+        "rationale": "Cross-modal freight innovation"
+      }
+    }
+  ]
+}

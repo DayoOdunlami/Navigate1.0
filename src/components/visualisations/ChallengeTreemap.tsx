@@ -17,6 +17,7 @@ export function ChallengeTreemap({
   domain,
   controlState,
   onEntitySelect,
+  onControlChange: _onControlChange,
   selectedEntity,
   className = '',
 }: VisualizationComponentProps) {
@@ -118,8 +119,10 @@ export function ChallengeTreemap({
         margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
         label={(node) => {
           // Show funding amount for leaf nodes
-          if (!node.children) {
-            return `${node.data.name}\n£${(node.data.value / 1000000).toFixed(1)}M`;
+          const hasChildren = Array.isArray((node as any).children) && (node as any).children.length > 0;
+          if (!hasChildren) {
+            const value = (node.data as any)?.value ?? 0;
+            return `${node.data.name}\n£${(value / 1000000).toFixed(1)}M`;
           }
           return node.data.name;
         }}
@@ -134,15 +137,24 @@ export function ChallengeTreemap({
         onClick={handleNodeClick}
         tooltip={({ node }) => (
           <div className="bg-white p-3 rounded shadow-lg border">
-            <div className="font-semibold">{node.id}</div>
-            <div className="text-sm text-gray-600">
-              Funding: £{(node.value / 1000000).toFixed(2)}M
-            </div>
-            {node.data?.challenge && (
-              <div className="text-xs text-gray-500 mt-1">
-                Click to view details
-              </div>
-            )}
+            {(() => {
+              const data = node.data as any;
+              const displayName = data?.name || node.id;
+              const displayValue = typeof node.value === 'number' ? node.value : 0;
+              return (
+                <>
+                  <div className="font-semibold">{displayName}</div>
+                  <div className="text-sm text-gray-600">
+                    Funding: £{(displayValue / 1000000).toFixed(2)}M
+                  </div>
+                  {data?.challenge && (
+                    <div className="text-xs text-gray-500 mt-1">
+                      Click to view details
+                    </div>
+                  )}
+                </>
+              );
+            })()}
           </div>
         )}
       />

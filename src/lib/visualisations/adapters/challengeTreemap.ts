@@ -5,7 +5,7 @@
  * Groups by: tier → funding body → programme
  */
 
-import type { BaseEntity } from '@/lib/base-entity-enhanced';
+import type { BaseEntity } from '@/lib/base-entity';
 
 export interface TreemapNode {
   name: string;

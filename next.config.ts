@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   },
   // Configure server-only modules - these are only used in API routes
   serverExternalPackages: ['fs', 'path'],
+  // Ensure Next.js uses this repo as the tracing root (avoid picking parent lockfile)
+  outputFileTracingRoot: __dirname,
   // Remove deprecated experimental.serverComponentsExternalPackages
   // (moved to serverExternalPackages in Next.js 15)
   webpack: (config, { isServer }) => {
