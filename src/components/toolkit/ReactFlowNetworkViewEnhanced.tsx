@@ -25,6 +25,7 @@ import {
   BaseEdge,
   EdgeProps,
   getBezierPath,
+  ConnectionMode,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { Settings, Save, RotateCcw, Search, X, Filter, Download, Upload, Trash2, ZoomIn, Users, Network } from 'lucide-react';
@@ -529,7 +530,7 @@ function NetworkFlowContentEnhanced({
       edgeTypes={edgeTypes}
       fitView
       fitViewOptions={{ padding: 0.2 }}
-      connectionMode="loose"
+      connectionMode={ConnectionMode.Loose}
       defaultEdgeOptions={{
         type: 'smoothstep',
         animated: true,
