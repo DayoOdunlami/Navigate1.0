@@ -33,11 +33,17 @@ export function BumpChartNavigate({
   onTechnologySelect: _onTechnologySelect,
   className = '' 
 }: BumpChartNavigateProps) {
+  // keep optional callbacks in signature for API compatibility
+  void _onViewChange;
+  void _onTechnologySelect;
   const [internalView] = useState<BumpView>('all_technologies');
   
   // Use external props if provided, otherwise use internal state
   const view = externalView ?? internalView;
-  const selectedCategories = externalCategories.length > 0 ? externalCategories : [];
+  const selectedCategories = useMemo(
+    () => (externalCategories.length > 0 ? externalCategories : []),
+    [externalCategories]
+  );
 
   // Generate historical TRL progression for each technology
   // Since we only have current TRL, we'll simulate realistic progression
@@ -214,8 +220,8 @@ export function BumpChartNavigate({
               startLabel={d => d.id}
               endLabel={d => {
                 const lastPoint = d.data[d.data.length - 1];
-                const yVal = lastPoint?.y ?? '';
-                return `${d.id} ${yVal !== '' ? `(TRL ${yVal})` : ''}`;
+                const suffix = typeof lastPoint?.y === 'number' ? ` (TRL ${lastPoint.y})` : '';
+                return `${d.id}${suffix}`;
               }}
             />
             
