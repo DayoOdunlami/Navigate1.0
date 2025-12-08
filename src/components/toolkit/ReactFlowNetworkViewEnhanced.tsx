@@ -550,8 +550,10 @@ function NetworkFlowContentEnhanced({
       <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
       <Controls />
       <MiniMap
-        nodeColor={(node) => {
-          return node.data?.color || '#6b7280';
+        nodeColor={(node): string => {
+          // @xyflow/react expects a string; fall back to grey if no color
+          const color = (node as any)?.data?.color;
+          return typeof color === 'string' ? color : '#6b7280';
         }}
         maskColor="rgba(0, 0, 0, 0.1)"
         pannable
