@@ -64,7 +64,7 @@ export interface UnifiedIntelligencePanelProps {
   // Callbacks
   onEntitySelect?: (entity: SelectedEntity) => void;
   onClearSelection?: () => void;
-  onFunctionCall?: (functionName: string, args: any) => void;
+  onFunctionCall?: (functionName: string, args: any) => Promise<{ success: boolean; message?: string; error?: string }>;
   
   // Layout options
   defaultAIExpanded?: boolean;
