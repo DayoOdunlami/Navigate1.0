@@ -20,6 +20,7 @@ const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
   ssr: false,
   loading: () => <div className="flex items-center justify-center h-96">Loading graph...</div>
 });
+const ForceGraphAny = ForceGraph2D as unknown as React.ComponentType<any>;
 
 type RelationshipFilterState = {
   funds: boolean;
@@ -166,8 +167,10 @@ export function NetworkGraphNavigate({
   // Filter links based on relationship type filters
   const filteredGraphData = useMemo(() => {
     const filteredLinks = graphDataMemo.links.filter(link => {
-      const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-      const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+      const source = (link as any).source;
+      const target = (link as any).target;
+      const sourceId = typeof source === 'string' ? source : source?.id;
+      const targetId = typeof target === 'string' ? target : target?.id;
       const relationship = globalRelationships.find(r => 
         (r.source === sourceId && r.target === targetId) ||
         (r.source === targetId && r.target === sourceId)
@@ -188,8 +191,10 @@ export function NetworkGraphNavigate({
     if (hideIsolatedNodes) {
       const connectedNodeIds = new Set<string>();
       filteredLinks.forEach(link => {
-        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        const source = (link as any).source;
+        const target = (link as any).target;
+        const sourceId = typeof source === 'string' ? source : source?.id;
+        const targetId = typeof target === 'string' ? target : target?.id;
         connectedNodeIds.add(sourceId);
         connectedNodeIds.add(targetId);
       });
@@ -308,8 +313,10 @@ export function NetworkGraphNavigate({
     // Dim nodes that aren't connected to active node (when one is clicked)
     const isDimmed = clickedNode && clickedNode.id !== node.id && 
       !graphData.links.some(link => {
-        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        const source = (link as any).source;
+        const target = (link as any).target;
+        const sourceId = typeof source === 'string' ? source : source?.id;
+        const targetId = typeof target === 'string' ? target : target?.id;
         return (sourceId === clickedNode.id && targetId === node.id) ||
                (targetId === clickedNode.id && sourceId === node.id);
       });
@@ -367,16 +374,20 @@ export function NetworkGraphNavigate({
     const similarity = link.similarity || 0.5;
     
     // Get relationship type from original relationship data
-    const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-    const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+    const sourceVal = (link as any).source;
+    const targetVal = (link as any).target;
+    const sourceId = typeof sourceVal === 'string' ? sourceVal : sourceVal?.id;
+    const targetId = typeof targetVal === 'string' ? targetVal : targetVal?.id;
     const relationship = globalRelationships.find(r => 
       (r.source === sourceId && r.target === targetId) ||
       (r.source === targetId && r.target === sourceId)
     );
     
     // Check if this link is connected to hovered/clicked node
-    const isConnectedToActive = (hoveredNode && (start.id === hoveredNode.id || end.id === hoveredNode.id)) ||
-                                (clickedNode && (start.id === clickedNode.id || end.id === clickedNode.id));
+    const isConnectedToActive = Boolean(
+      (hoveredNode && (start.id === hoveredNode.id || end.id === hoveredNode.id)) ||
+      (clickedNode && (start.id === clickedNode.id || end.id === clickedNode.id))
+    );
     
     // Color code by relationship type
     const getLinkColor = (type?: string, isActive = false, isFaint = false) => {
@@ -394,9 +405,11 @@ export function NetworkGraphNavigate({
     
     // Determine if this is a "faint" connection (other connections from clicked node, not the main ones)
     // Show faint lines for connections FROM the clicked node that aren't the primary highlighted ones
-    const isFaintConnection = clickedNode && 
+    const isFaintConnection = Boolean(
+      clickedNode &&
       (start.id === clickedNode.id || end.id === clickedNode.id) &&
-      !isConnectedToActive; // Not the main connection being hovered/selected
+      !isConnectedToActive
+    ); // Not the main connection being hovered/selected
     
     const linkColor = getLinkColor(relationship?.type, isConnectedToActive, isFaintConnection);
     const linkWidth = isFaintConnection ? 1 : Math.max(2, link.width || 2.5);
@@ -492,7 +505,7 @@ export function NetworkGraphNavigate({
             ref={containerRef}
             className="relative w-full overflow-hidden h-[500px] min-h-[400px]"
           >
-            <ForceGraph2D
+            <ForceGraphAny
               ref={fgRef}
               graphData={graphData}
               nodeId="id"
@@ -501,10 +514,10 @@ export function NetworkGraphNavigate({
               nodeVal="value"
               linkSource="source"
               linkTarget="target"
-              onNodeClick={handleNodeClick}
-              onNodeHover={handleNodeHover}
-              nodeCanvasObject={nodeCanvasObject}
-              linkCanvasObject={linkCanvasObject}
+              onNodeClick={handleNodeClick as any}
+              onNodeHover={handleNodeHover as any}
+              nodeCanvasObject={nodeCanvasObject as any}
+              linkCanvasObject={linkCanvasObject as any}
               width={dimensions.width}
               height={dimensions.height}
               backgroundColor="#fafafa"
@@ -514,14 +527,10 @@ export function NetworkGraphNavigate({
               cooldownTicks={200} // More ticks for larger spacing to settle
               d3AlphaDecay={0.012} // Slower decay for better spreading with larger distances
               d3VelocityDecay={0.25} // Lower velocity decay for smoother movement
-              d3Force="link"
-              d3ForceParam={(link: any) => {
+              linkDirectionalDistance={(link: any) => {
                 const strength = link.similarity || 0.5;
-                // DOUBLED base spacing: 480-1280px (was 240-640px)
-                // Multiplied by user-controlled spacing factor
                 const baseDistance = 480 + (1 - strength) * 800;
-                const finalDistance = baseDistance * nodeSpacing;
-                return finalDistance;
+                return baseDistance * nodeSpacing;
               }}
               onEngineTick={() => {
                 // Add/update charge force to push nodes apart

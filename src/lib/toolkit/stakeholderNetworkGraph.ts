@@ -30,6 +30,8 @@ export interface StakeholderNetworkNode {
   };
   entityType: StakeholderEntityType;
   fullData: ToolkitStakeholder | ToolkitProject | WorkingGroup;
+  x?: number;
+  y?: number;
 }
 
 export interface StakeholderNetworkLink {

@@ -71,9 +71,7 @@ export function NetworkGraphECharts() {
         const angle = index * step;
         withPositions.push({
           ...node,
-          // @ts-expect-error - ECharts accepts x/y on data items
           x: cx + Math.cos(angle) * innerRadius,
-          // @ts-expect-error - ECharts accepts x/y on data items
           y: cy + Math.sin(angle) * innerRadius,
         });
       });

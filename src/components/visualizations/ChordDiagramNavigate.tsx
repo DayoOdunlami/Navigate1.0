@@ -30,7 +30,8 @@ function getStakeholderTypeColor(type: StakeholderType): string {
     'Government': '#006E51',      // CPC Primary Teal
     'Research': '#4A90E2',        // CPC Info Blue
     'Industry': '#F5A623',        // CPC Warning Amber
-    'Intermediary': '#8B5CF6'     // Purple
+    'Intermediary': '#8B5CF6',    // Purple
+    'Working Group': '#0EA5E9',   // Light blue
   };
   return colors[type] || '#6b7280';
 }
@@ -52,7 +53,7 @@ function transformStakeholderTypesToChord(
   stakeholders: Stakeholder[],
   relationships: Relationship[]
 ) {
-  const typeNames: StakeholderType[] = ['Government', 'Research', 'Industry', 'Intermediary'];
+  const typeNames: StakeholderType[] = ['Government', 'Research', 'Industry', 'Intermediary', 'Working Group'];
   const typeMap = new Map<StakeholderType, Set<string>>();
   
   // Group stakeholders by type
@@ -298,14 +299,6 @@ export function ChordDiagramNavigate({
             onRibbonClick={handleRibbonClick}
             animate={true}
             motionConfig="wobbly"
-            tooltip={({ id, value }) => (
-              <div className="bg-white p-2 border rounded shadow-lg">
-                <div className="font-semibold">{id}</div>
-                <div className="text-sm">
-                  <span className="font-medium">Connections:</span> {value}
-                </div>
-              </div>
-            )}
           />
           
           {/* Legend */}

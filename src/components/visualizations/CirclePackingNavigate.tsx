@@ -21,6 +21,7 @@ interface CirclePackingNavigateProps {
   relationships: Relationship[];
   view?: HierarchyView;
   onViewChange?: (view: HierarchyView) => void;
+  onNodeClick?: (nodeId: string, entityType?: 'stakeholder' | 'technology' | 'project' | 'funding', data?: unknown) => void;
   className?: string;
 }
 

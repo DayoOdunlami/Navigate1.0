@@ -166,8 +166,10 @@ export function NetworkGraphNavigate3D({
   // Filter links based on relationship type filters
   const filteredGraphData = useMemo(() => {
     const filteredLinks = graphDataMemo.links.filter(link => {
-      const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-      const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+      const source = (link as any).source;
+      const target = (link as any).target;
+      const sourceId = typeof source === 'string' ? source : source?.id;
+      const targetId = typeof target === 'string' ? target : target?.id;
       const relationship = globalRelationships.find(r => 
         (r.source === sourceId && r.target === targetId) ||
         (r.source === targetId && r.target === sourceId)
@@ -188,8 +190,10 @@ export function NetworkGraphNavigate3D({
     if (hideIsolatedNodes) {
       const connectedNodeIds = new Set<string>();
       filteredLinks.forEach(link => {
-        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        const source = (link as any).source;
+        const target = (link as any).target;
+        const sourceId = typeof source === 'string' ? source : source?.id;
+        const targetId = typeof target === 'string' ? target : target?.id;
         connectedNodeIds.add(sourceId);
         connectedNodeIds.add(targetId);
       });
@@ -280,13 +284,18 @@ export function NetworkGraphNavigate3D({
     const isHovered = hoveredNode?.id === node.id;
     
     // Dim nodes that aren't connected to active node
-    const isDimmed = clickedNode && clickedNode.id !== node.id && 
+    const isDimmed = Boolean(
+      clickedNode &&
+      clickedNode.id !== node.id &&
       !graphData.links.some(link => {
-        const sourceId = typeof link.source === 'string' ? link.source : link.source.id;
-        const targetId = typeof link.target === 'string' ? link.target : link.target.id;
+        const source = (link as any).source;
+        const target = (link as any).target;
+        const sourceId = typeof source === 'string' ? source : source?.id;
+        const targetId = typeof target === 'string' ? target : target?.id;
         return (sourceId === clickedNode.id && targetId === node.id) ||
                (targetId === clickedNode.id && sourceId === node.id);
-      });
+      })
+    );
 
     // Parse color
     const color = new THREE.Color(node.color);
