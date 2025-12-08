@@ -66,8 +66,8 @@ function NetworkFlowContent({
   allowConnections: boolean;
   setAllowConnections: (value: boolean) => void;
 }) {
-  const [nodes, setNodes, onNodesChange] = useNodesState<Node[]>([]);
-  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge[]>([]);
+  const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
+  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
 
   // Load saved config
   useEffect(() => {
