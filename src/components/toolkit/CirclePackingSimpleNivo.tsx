@@ -110,7 +110,6 @@ export function CirclePackingSimpleNivo({
               }
               return base;
             }}
-            colorBy="color"
             padding={6}
             margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
             enableLabels={false}
