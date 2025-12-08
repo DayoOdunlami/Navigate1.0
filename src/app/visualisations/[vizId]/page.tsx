@@ -24,6 +24,8 @@ import {
   type VisualizationConfig,
 } from '@/lib/visualisations/registry';
 import type { ControlDefinition } from '@/lib/visualisations/types';
+import { handleAIFunctionCall as handleAIFunctionCallRaw } from '@/lib/ai-function-handlers';
+import type { FunctionExecutionState } from '@/lib/ai-function-handlers';
 
 // Import your unified data
 import { unifiedEntities, unifiedRelationships, getEntitiesByDomain } from '@/data/unified';
@@ -213,21 +215,22 @@ export default function VisualizationPage() {
     });
   }, []);
 
-  // AI function call handler
+  // AI function call handler - wraps to return Promise
   const handleAIFunctionCall = useCallback(
-    (functionName: string, args: any) => {
+    async (functionName: string, args: any): Promise<{ success: boolean; message?: string; error?: string }> => {
       if (functionName === 'set_control' && args?.controlId && args?.value !== undefined) {
         handleControlChange(args.controlId, args.value);
-        return true;
+        return { success: true, message: `Control ${args.controlId} updated` };
       }
       if (functionName === 'select_entity' && args?.entityId) {
         const entity = filteredEntities.find((e) => e.id === args.entityId);
         if (entity) {
           setSelectedEntity(entity);
-          return true;
+          return { success: true, message: `Entity ${args.entityId} selected` };
         }
+        return { success: false, error: `Entity ${args.entityId} not found` };
       }
-      return false;
+      return { success: false, error: `Unknown function: ${functionName}` };
     },
     [handleControlChange, filteredEntities]
   );
