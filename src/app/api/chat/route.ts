@@ -5,11 +5,6 @@ import { searchKnowledgeBase, formatKnowledgeBaseForContext } from '@/lib/knowle
 import { getAIFunctionDefinitions, formatAICapabilities } from '@/lib/ai-functions';
 import { getVectorStore } from '@/lib/ai/vector-store-json';
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 export async function POST(request: NextRequest) {
   try {
     // Check for API key
@@ -19,6 +14,9 @@ export async function POST(request: NextRequest) {
         { status: 500 }
       );
     }
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
 
     const body = await request.json();
     const { messages, context, model: requestModel, temperature: requestTemperature, toolCalls, toolResults } = body;
