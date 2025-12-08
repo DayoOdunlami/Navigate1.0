@@ -24,6 +24,7 @@ import {
   NodeToolbar,
   BaseEdge,
   EdgeProps,
+  getBezierPath,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { Settings, Save, RotateCcw, Search, X, Filter, Download, Upload, Trash2, ZoomIn, Users, Network } from 'lucide-react';
@@ -85,18 +86,27 @@ function StakeholderNode({ data, selected }: { data: any; selected?: boolean }) 
 
 // Custom Edge with Label
 function CustomEdge(props: EdgeProps) {
-  const { data, label, style, labelStyle, labelShowBg, labelBgStyle } = props;
+  const { id, sourceX, sourceY, targetX, targetY, sourcePosition, targetPosition, style = {}, markerEnd, label } = props;
+  const [edgePath] = getBezierPath({
+    sourceX,
+    sourceY,
+    sourcePosition,
+    targetX,
+    targetY,
+    targetPosition,
+  });
+
   return (
     <>
-      <BaseEdge {...props} />
+      <BaseEdge path={edgePath} markerEnd={markerEnd} style={style} />
       {label && (
         <text
-          x={(style as any)?.labelX}
-          y={(style as any)?.labelY}
+          x={(sourceX + targetX) / 2}
+          y={(sourceY + targetY) / 2}
           className="react-flow__edge-text"
           textAnchor="middle"
           dominantBaseline="middle"
-          style={{ fontSize: '10px', fill: '#666', ...labelStyle }}
+          style={{ fontSize: '10px', fill: '#666' }}
         >
           {label}
         </text>
