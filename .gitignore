@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Build status files (tracked in git for visibility)
+# BUILD_STATUS.md
+# BUILD_ERRORS.txt
+# vercel-build-logs.txt

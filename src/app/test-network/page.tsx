@@ -169,18 +169,10 @@ function TestNetworkContent() {
                   />
                 )}
                 {graphEngine === 'echarts' && (
-                  <NetworkGraphECharts
-                    challenges={filteredChallenges}
-                    selectedChallenge={selectedChallenge}
-                    onChallengeSelect={setSelectedChallenge}
-                  />
+                  <NetworkGraphECharts />
                 )}
                 {graphEngine === 'd3' && (
-                  <NetworkGraphD3
-                    challenges={filteredChallenges}
-                    selectedChallenge={selectedChallenge}
-                    onChallengeSelect={setSelectedChallenge}
-                  />
+                  <NetworkGraphD3 />
                 )}
               </>
             ) : (
