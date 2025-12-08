@@ -9,7 +9,16 @@ import {
 } from 'echarts/components';
 import { SankeyChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
-import fundingFlowsData from '@/data/toolkit/fundingFlows.json';
+
+// Try to load funding flows data, fallback to empty if file doesn't exist
+let fundingFlowsData: { nodes: any[]; links: any[] };
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  fundingFlowsData = require('@/data/toolkit/fundingFlows.json');
+} catch {
+  // Funding flows file doesn't exist yet, use empty data
+  fundingFlowsData = { nodes: [], links: [] };
+}
 
 const ReactECharts = dynamic(() => import('echarts-for-react'), { ssr: false });
 
