@@ -78,7 +78,6 @@ export function CirclePackingStakeholderNivoView() {
               }
               return getColor(nivoNode.data);
             }}
-            colorBy="color"
             padding={6}
             margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
             enableLabels={false}
