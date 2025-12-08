@@ -45,7 +45,7 @@ export interface UnifiedVisualizationLayoutProps {
   // Callbacks
   onEntitySelect?: (entity: SelectedEntity) => void;
   onClearSelection?: () => void;
-  onFunctionCall?: (functionName: string, args: any) => void;
+  onFunctionCall?: (functionName: string, args: any) => Promise<{ success: boolean; message?: string; error?: string }>;
   onBack?: () => void;
   
   // Header content
