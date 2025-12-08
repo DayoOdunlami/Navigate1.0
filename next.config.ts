@@ -6,16 +6,11 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Allow ESLint warnings to pass during builds (temporary)
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   // Configure server-only modules - these are only used in API routes
   serverExternalPackages: ['fs', 'path'],
   // Ensure Next.js uses this repo as the tracing root (avoid picking parent lockfile)
   outputFileTracingRoot: __dirname,
-  // Remove deprecated experimental.serverComponentsExternalPackages
-  // (moved to serverExternalPackages in Next.js 15)
+  // Webpack config for fallbacks (used when --webpack flag is set)
   webpack: (config, { isServer }) => {
     // Ensure fs module is only available on server (for non-Turbopack builds)
     if (!isServer) {
@@ -27,6 +22,8 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
+  // Turbopack config - empty for now, webpack handles the fallbacks
+  turbopack: {},
 };
 
 export default nextConfig;
