@@ -1,0 +1,335 @@
+{
+  "version": "1.0",
+  "description": "Few-shot examples for Atlas challenge extraction. Used in Stage 2 (Classification) to ensure consistent taxonomy application.",
+  
+  "examples": [
+    {
+      "id": "example-iuk-aviation-decarb",
+      "sourceType": "funding",
+      "sourceName": "Innovate UK",
+      "input": "Competition: Net Zero Aviation Fuels\n\nFunding available: Share of up to £12 million\nProject size: £2 million to £5 million\nCompetition opens: 15 January 2025\nCompetition closes: 12 March 2025 11:00am\n\nScope:\nWe are looking for innovative projects that can accelerate the development and scale-up of sustainable aviation fuels (SAF). Projects should address one or more of:\n- Novel SAF production pathways\n- Feedstock development and supply chain\n- Integration with airport infrastructure\n- Certification and testing methodologies\n\nYour project must:\n- Be collaborative, involving at least two organisations\n- Include an end user (airline, airport, or fuel supplier)\n- Demonstrate a clear route to commercialisation\n- Address TRL 4-7 technologies\n\nEligibility:\n- UK registered businesses\n- Must include at least one SME\n- Academic partners welcome but industry-led",
+      
+      "output": {
+        "title": "Net Zero Aviation Fuels",
+        "summary": "Innovate UK competition seeking innovative projects to accelerate sustainable aviation fuel development and scale-up, with £12m funding available for collaborative projects at TRL 4-7.",
+        "problemStatement": "Aviation lacks scalable, cost-effective alternatives to kerosene-based jet fuel, blocking the sector's path to net zero emissions.",
+        "modes": ["Aviation"],
+        "strategicThemes": ["Decarbonisation", "Industry"],
+        "challengeType": "technology_development",
+        "trl": { "min": 4, "max": 7 },
+        "funding": {
+          "min": 2000000,
+          "max": 5000000,
+          "currency": "GBP",
+          "type": "grant",
+          "totalPot": 12000000
+        },
+        "deadline": "2025-03-12",
+        "keyEntities": ["Innovate UK", "SAF", "airlines", "airports"],
+        "eligibility": ["UK registered business", "SME required", "Collaborative project", "Industry-led"],
+        "classification": {
+          "modes": [
+            { "value": "Aviation", "confidence": 0.98, "reasoning": "Explicitly aviation-focused: SAF, airlines, airports" }
+          ],
+          "themes": [
+            { "value": "Decarbonisation", "confidence": 0.95, "reasoning": "Net zero, sustainable fuels" },
+            { "value": "Industry", "confidence": 0.85, "reasoning": "Supply chain, commercialisation focus" }
+          ],
+          "challengeType": { "value": "technology_development", "confidence": 0.92, "reasoning": "TRL 4-7, development and scale-up" }
+        }
+      }
+    },
+    
+    {
+      "id": "example-dft-policy-maritime",
+      "sourceType": "policy",
+      "sourceName": "Department for Transport",
+      "input": "Clean Maritime Plan 2025 Update\n\nThe Department for Transport has published an update to the Clean Maritime Plan, setting out the government's strategy for decarbonising the maritime sector.\n\nKey commitments:\n- All new vessels operating in UK waters to be zero-emission capable by 2035\n- £200 million Green Shipping Corridor Fund to establish zero-emission routes\n- Requirement for major ports to provide shore power by 2030\n- Support for domestic hydrogen and ammonia bunkering infrastructure\n\nThe plan identifies priority corridors:\n- UK-Rotterdam for freight\n- Belfast-Liverpool for passenger ferries\n- Scottish island routes for community resilience\n\nIndustry will be expected to:\n- Submit decarbonisation plans by 2026\n- Report emissions annually\n- Participate in voluntary efficiency schemes\n\nThe Maritime and Coastguard Agency will develop new regulatory frameworks for alternative fuels.",
+      
+      "output": {
+        "title": "Clean Maritime Plan 2025 Update",
+        "summary": "DfT strategy update mandating zero-emission capable vessels by 2035, establishing £200m Green Shipping Corridor Fund, and requiring port shore power by 2030.",
+        "problemStatement": "UK maritime sector lacks clear regulatory pathway and infrastructure for transition to zero-emission operations.",
+        "modes": ["Maritime"],
+        "strategicThemes": ["Decarbonisation", "Planning and Operation", "Industry"],
+        "challengeType": "policy_regulatory",
+        "funding": {
+          "min": null,
+          "max": null,
+          "currency": "GBP",
+          "type": "grant",
+          "totalPot": 200000000
+        },
+        "deadline": null,
+        "keyEntities": ["DfT", "MCA", "UK ports", "Rotterdam", "Belfast", "Liverpool", "hydrogen", "ammonia"],
+        "eligibility": null,
+        "classification": {
+          "modes": [
+            { "value": "Maritime", "confidence": 0.99, "reasoning": "Explicitly maritime: vessels, ports, shipping corridors" }
+          ],
+          "themes": [
+            { "value": "Decarbonisation", "confidence": 0.95, "reasoning": "Zero-emission, alternative fuels, green corridors" },
+            { "value": "Planning and Operation", "confidence": 0.80, "reasoning": "Regulatory frameworks, reporting requirements" },
+            { "value": "Industry", "confidence": 0.75, "reasoning": "Industry decarbonisation plans, supply chain" }
+          ],
+          "challengeType": { "value": "policy_regulatory", "confidence": 0.95, "reasoning": "Government strategy, mandates, regulatory frameworks" }
+        }
+      }
+    },
+    
+    {
+      "id": "example-horizon-rail",
+      "sourceType": "funding",
+      "sourceName": "Horizon Europe",
+      "input": "HORIZON-CL5-2025-D5-01: Next Generation Rail Systems\n\nType of Action: Research and Innovation Action (RIA)\nBudget: €15,000,000\nDeadline: 18 September 2025\n\nExpected Outcome:\nProjects should contribute to the European Rail Research Advisory Council (ERRAC) vision for a sustainable, efficient rail system by 2050.\n\nScope:\nProposals should address the development of:\n- Digital automatic coupling (DAC) for freight wagons\n- AI-based predictive maintenance systems\n- Energy-efficient traction systems\n- Cross-border interoperability solutions\n\nTRL: Projects should start at TRL 3-4 and reach TRL 5-6.\n\nConsortium requirements:\n- Minimum 3 independent legal entities from 3 different EU/associated countries\n- Must include at least one infrastructure manager or railway undertaking\n- UK entities eligible as associated country participants",
+      
+      "output": {
+        "title": "Next Generation Rail Systems (HORIZON-CL5-2025-D5-01)",
+        "summary": "Horizon Europe RIA funding €15m for rail innovation projects covering digital coupling, AI maintenance, energy efficiency, and cross-border interoperability at TRL 3-6.",
+        "problemStatement": "European rail lacks standardised digital systems for freight, predictive maintenance capabilities, and seamless cross-border operations.",
+        "modes": ["Rail"],
+        "strategicThemes": ["Autonomy", "Decarbonisation", "Planning and Operation"],
+        "challengeType": "technology_development",
+        "trl": { "min": 3, "max": 6 },
+        "funding": {
+          "min": null,
+          "max": null,
+          "currency": "EUR",
+          "type": "grant",
+          "totalPot": 15000000
+        },
+        "deadline": "2025-09-18",
+        "keyEntities": ["ERRAC", "EU", "infrastructure managers", "railway undertakings"],
+        "eligibility": ["3+ entities from 3+ countries", "Infrastructure manager or railway undertaking required", "UK eligible"],
+        "classification": {
+          "modes": [
+            { "value": "Rail", "confidence": 0.99, "reasoning": "Explicitly rail: wagons, traction, railway undertakings" }
+          ],
+          "themes": [
+            { "value": "Autonomy", "confidence": 0.85, "reasoning": "AI-based systems, automatic coupling" },
+            { "value": "Decarbonisation", "confidence": 0.80, "reasoning": "Energy-efficient traction" },
+            { "value": "Planning and Operation", "confidence": 0.85, "reasoning": "Predictive maintenance, interoperability" }
+          ],
+          "challengeType": { "value": "technology_development", "confidence": 0.95, "reasoning": "TRL advancement, R&I action, technology development" }
+        }
+      }
+    },
+    
+    {
+      "id": "example-sbri-highways",
+      "sourceType": "funding",
+      "sourceName": "SBRI",
+      "input": "SBRI Competition: Smart Motorway Safety Enhancement\n\nNational Highways is seeking innovative solutions to improve safety on smart motorways.\n\nPhase 1: Feasibility studies up to £100,000 (6 months)\nPhase 2: Development contracts up to £1,000,000 (12 months)\n\nChallenge areas:\n1. Stopped vehicle detection - improving detection speed and accuracy\n2. Emergency refuge area signage - enhanced visibility in all conditions\n3. Driver information systems - real-time hazard communication\n4. Hard shoulder running management - safer dynamic lane control\n\nWe welcome solutions using:\n- Computer vision and AI\n- V2X communication\n- IoT sensors\n- Advanced materials for signage\n\nSubmission deadline: 28 February 2025\n\nOpen to UK registered businesses. SMEs particularly encouraged.",
+      
+      "output": {
+        "title": "Smart Motorway Safety Enhancement",
+        "summary": "SBRI competition from National Highways seeking safety innovations for smart motorways, with Phase 1 feasibility (£100k) and Phase 2 development (£1m) contracts available.",
+        "problemStatement": "Smart motorways have safety concerns around stopped vehicle detection, emergency refuge visibility, and dynamic lane management that require technological solutions.",
+        "modes": ["Highways"],
+        "strategicThemes": ["Autonomy", "People Experience"],
+        "challengeType": "safety_security",
+        "trl": null,
+        "funding": {
+          "min": 100000,
+          "max": 1000000,
+          "currency": "GBP",
+          "type": "contract"
+        },
+        "deadline": "2025-02-28",
+        "keyEntities": ["National Highways", "smart motorways", "V2X"],
+        "eligibility": ["UK registered business", "SMEs encouraged"],
+        "classification": {
+          "modes": [
+            { "value": "Highways", "confidence": 0.99, "reasoning": "Smart motorways, hard shoulder, National Highways" }
+          ],
+          "themes": [
+            { "value": "Autonomy", "confidence": 0.80, "reasoning": "AI, computer vision, V2X, IoT sensors" },
+            { "value": "People Experience", "confidence": 0.90, "reasoning": "Safety, driver information, hazard communication" }
+          ],
+          "challengeType": { "value": "safety_security", "confidence": 0.95, "reasoning": "Safety enhancement is explicit focus" }
+        }
+      }
+    },
+    
+    {
+      "id": "example-crossmodal-hydrogen",
+      "sourceType": "funding",
+      "sourceName": "UKRI",
+      "input": "Hydrogen Transport Innovation Programme\n\nUKRI Opportunity\nFunding: £30 million total, projects £1m-£5m\nClosing date: 5 May 2025\n\nThis cross-modal programme supports the development of hydrogen technologies across transport modes.\n\nScope includes:\n- Heavy goods vehicle hydrogen powertrains\n- Hydrogen refuelling infrastructure for multiple transport modes\n- Maritime vessel hydrogen propulsion systems\n- Rail hydrogen traction technology\n- Aviation ground support equipment using hydrogen\n\nProjects must demonstrate:\n- Application across 2+ transport modes\n- Clear pathway to reducing infrastructure costs\n- Collaboration with end users in relevant sectors\n- TRL 4-7\n\nWe particularly welcome projects addressing:\n- Shared refuelling infrastructure (e.g., combined road and rail depots)\n- Standardisation of hydrogen storage and handling\n- Safety certification across modes",
+      
+      "output": {
+        "title": "Hydrogen Transport Innovation Programme",
+        "summary": "UKRI £30m cross-modal programme supporting hydrogen technology development across HGVs, maritime, rail, and aviation ground operations, requiring multi-modal applications at TRL 4-7.",
+        "problemStatement": "Hydrogen transport deployment is hindered by siloed development across modes, leading to duplicated infrastructure costs and lack of standardisation.",
+        "modes": ["Cross-modal", "Highways", "Maritime", "Rail", "Aviation"],
+        "strategicThemes": ["Decarbonisation", "Hubs and Clusters", "Industry"],
+        "challengeType": "infrastructure",
+        "trl": { "min": 4, "max": 7 },
+        "funding": {
+          "min": 1000000,
+          "max": 5000000,
+          "currency": "GBP",
+          "type": "grant",
+          "totalPot": 30000000
+        },
+        "deadline": "2025-05-05",
+        "keyEntities": ["UKRI", "hydrogen", "HGV", "refuelling infrastructure"],
+        "eligibility": ["Multi-modal application required", "End user collaboration required"],
+        "classification": {
+          "modes": [
+            { "value": "Cross-modal", "confidence": 0.95, "reasoning": "Explicitly requires 2+ modes, addresses shared infrastructure" },
+            { "value": "Highways", "confidence": 0.85, "reasoning": "HGV powertrains mentioned" },
+            { "value": "Maritime", "confidence": 0.80, "reasoning": "Vessel propulsion mentioned" },
+            { "value": "Rail", "confidence": 0.80, "reasoning": "Rail traction mentioned" },
+            { "value": "Aviation", "confidence": 0.70, "reasoning": "Ground support equipment only - secondary" }
+          ],
+          "themes": [
+            { "value": "Decarbonisation", "confidence": 0.95, "reasoning": "Hydrogen is zero-emission fuel" },
+            { "value": "Hubs and Clusters", "confidence": 0.85, "reasoning": "Shared refuelling infrastructure, multi-modal depots" },
+            { "value": "Industry", "confidence": 0.75, "reasoning": "Standardisation, cost reduction, supply chain" }
+          ],
+          "challengeType": { "value": "infrastructure", "confidence": 0.85, "reasoning": "Primary focus on refuelling infrastructure" }
+        }
+      }
+    },
+    
+    {
+      "id": "example-skills-workforce",
+      "sourceType": "funding",
+      "sourceName": "DfT",
+      "input": "Transport Skills and Workforce Development Fund\n\nThe Department for Transport is launching a new fund to address critical skills gaps in the transport sector.\n\nFunding: £15 million over 3 years\nProject size: £100,000 to £500,000\n\nPriority areas:\n- Digital skills for transport operations (data analytics, AI/ML basics)\n- Green skills for vehicle maintenance (EV, hydrogen systems)\n- Diversity and inclusion in transport careers\n- Apprenticeship development for emerging transport technologies\n\nEligible applicants:\n- Further education colleges\n- Universities with transport-related courses\n- Industry training providers\n- Transport operators with training programmes\n\nDeadline: Rolling applications until fund exhausted\n\nProjects should demonstrate clear industry demand and pathway to employment.",
+      
+      "output": {
+        "title": "Transport Skills and Workforce Development Fund",
+        "summary": "DfT £15m fund addressing transport sector skills gaps in digital, green technology maintenance, diversity, and emerging tech apprenticeships.",
+        "problemStatement": "Transport sector faces critical skills shortages in digital operations, green vehicle maintenance, and lacks diversity, threatening ability to deliver net zero transition.",
+        "modes": ["Cross-modal"],
+        "strategicThemes": ["People Experience", "Industry"],
+        "challengeType": "skills_workforce",
+        "funding": {
+          "min": 100000,
+          "max": 500000,
+          "currency": "GBP",
+          "type": "grant",
+          "totalPot": 15000000
+        },
+        "deadline": null,
+        "keyEntities": ["DfT", "FE colleges", "universities", "apprenticeships"],
+        "eligibility": ["FE colleges", "Universities", "Training providers", "Transport operators"],
+        "classification": {
+          "modes": [
+            { "value": "Cross-modal", "confidence": 0.90, "reasoning": "Transport sector broadly, not mode-specific" }
+          ],
+          "themes": [
+            { "value": "People Experience", "confidence": 0.90, "reasoning": "Workforce, diversity, careers" },
+            { "value": "Industry", "confidence": 0.80, "reasoning": "Skills supply chain, industry demand" }
+          ],
+          "challengeType": { "value": "skills_workforce", "confidence": 0.98, "reasoning": "Explicitly skills and workforce focused" }
+        }
+      }
+    },
+    
+    {
+      "id": "example-integrated-mobility",
+      "sourceType": "funding",
+      "sourceName": "Innovate UK",
+      "input": "Mobility as a Service (MaaS) Integration Challenge\n\nInnovate UK in partnership with Transport for the North\n\nFunding: £8 million\nProject size: Up to £2 million\n\nChallenge:\nDevelop and demonstrate integrated mobility platforms that seamlessly connect public transport, shared mobility, and active travel options.\n\nWe're looking for:\n- Single ticketing solutions across multiple operators\n- Real-time journey planning with live disruption handling\n- Integration of bike-share, e-scooters, car clubs with public transport\n- Accessibility features for users with mobility requirements\n- Data sharing frameworks between transport providers\n\nDemonstrator locations:\n- Manchester city region\n- Leeds city region\n- Sheffield city region\n\nMust involve:\n- At least one local transport authority\n- At least one technology provider\n- Public transport operators\n\nDeadline: 1 April 2025",
+      
+      "output": {
+        "title": "Mobility as a Service (MaaS) Integration Challenge",
+        "summary": "Innovate UK £8m challenge with Transport for the North to develop integrated mobility platforms connecting public transport, shared mobility, and active travel with single ticketing.",
+        "problemStatement": "Fragmented transport options with separate ticketing, planning, and payment systems create barriers to seamless multi-modal journeys and sustainable transport choices.",
+        "modes": ["Integrated"],
+        "strategicThemes": ["People Experience", "Planning and Operation", "Hubs and Clusters"],
+        "challengeType": "integration_interoperability",
+        "funding": {
+          "min": null,
+          "max": 2000000,
+          "currency": "GBP",
+          "type": "grant",
+          "totalPot": 8000000
+        },
+        "deadline": "2025-04-01",
+        "keyEntities": ["Innovate UK", "Transport for the North", "Manchester", "Leeds", "Sheffield", "MaaS"],
+        "eligibility": ["Local transport authority required", "Technology provider required", "PT operators required"],
+        "classification": {
+          "modes": [
+            { "value": "Integrated", "confidence": 0.95, "reasoning": "Explicitly multi-modal integration, MaaS, ticketing across modes" }
+          ],
+          "themes": [
+            { "value": "People Experience", "confidence": 0.90, "reasoning": "User-focused, accessibility, journey planning" },
+            { "value": "Planning and Operation", "confidence": 0.85, "reasoning": "Real-time operations, data sharing" },
+            { "value": "Hubs and Clusters", "confidence": 0.75, "reasoning": "City region focus, interchange integration" }
+          ],
+          "challengeType": { "value": "integration_interoperability", "confidence": 0.95, "reasoning": "Integration is the explicit focus" }
+        }
+      }
+    },
+    
+    {
+      "id": "example-data-digital",
+      "sourceType": "funding",
+      "sourceName": "Network Rail",
+      "input": "Digital Railway Data Platform Innovation\n\nNetwork Rail Open Call for Innovation\n\nWe are seeking innovative approaches to creating a unified data platform for railway operations.\n\nChallenge:\nRailway data exists in silos across multiple systems. We need solutions that can:\n- Integrate data from legacy signalling systems\n- Provide real-time asset condition monitoring\n- Enable predictive analytics for maintenance scheduling\n- Support digital twin development for infrastructure planning\n- Ensure cybersecurity across connected systems\n\nWe're particularly interested in:\n- API development for legacy system integration\n- Edge computing for trackside data processing\n- Secure data sharing with train operating companies\n\nFunding: Up to £500,000 per project\nTimeline: 18 month projects\n\nOpen to UK businesses with relevant data/digital expertise.",
+      
+      "output": {
+        "title": "Digital Railway Data Platform Innovation",
+        "summary": "Network Rail innovation call seeking solutions for unified railway data platform integrating legacy systems, enabling real-time monitoring, predictive maintenance, and digital twins.",
+        "problemStatement": "Railway operational data is siloed across disconnected legacy systems, preventing effective real-time monitoring, predictive maintenance, and digital transformation.",
+        "modes": ["Rail"],
+        "strategicThemes": ["Planning and Operation", "Autonomy"],
+        "challengeType": "data_digital",
+        "funding": {
+          "min": null,
+          "max": 500000,
+          "currency": "GBP",
+          "type": "contract"
+        },
+        "deadline": null,
+        "duration": "18 months",
+        "keyEntities": ["Network Rail", "TOCs", "signalling systems", "digital twin"],
+        "eligibility": ["UK business", "Data/digital expertise"],
+        "classification": {
+          "modes": [
+            { "value": "Rail", "confidence": 0.99, "reasoning": "Network Rail, railway operations, signalling, trackside" }
+          ],
+          "themes": [
+            { "value": "Planning and Operation", "confidence": 0.90, "reasoning": "Maintenance scheduling, asset monitoring, operations" },
+            { "value": "Autonomy", "confidence": 0.75, "reasoning": "Predictive analytics, edge computing, automation" }
+          ],
+          "challengeType": { "value": "data_digital", "confidence": 0.95, "reasoning": "Data platform, API, digital twin - explicitly digital focus" }
+        }
+      }
+    }
+  ],
+  
+  "modeKeywords": {
+    "Aviation": ["aircraft", "airport", "airspace", "aviation", "airline", "flight", "SAF", "sustainable aviation fuel", "eVTOL", "drone", "UAV", "CAA", "ATI", "Heathrow", "Gatwick"],
+    "Maritime": ["ship", "vessel", "port", "maritime", "shipping", "coastal", "offshore", "MCA", "IMO", "ferry", "freight shipping", "bunker"],
+    "Rail": ["train", "railway", "rail", "station", "track", "signalling", "Network Rail", "TOC", "RSSB", "rolling stock", "electrification", "ETCS"],
+    "Highways": ["road", "highway", "motorway", "vehicle", "traffic", "EV", "charging", "National Highways", "HGV", "smart motorway", "junction"],
+    "Integrated": ["multi-modal", "MaaS", "ticketing", "interchange", "mobility", "journey planning", "connected transport"],
+    "Cross-modal": ["transport sector", "all modes", "cross-sector", "pan-transport"]
+  },
+  
+  "themeKeywords": {
+    "Autonomy": ["autonomous", "automated", "AI", "machine learning", "self-driving", "remote operation", "robotics", "computer vision", "sensor"],
+    "Decarbonisation": ["zero emission", "net zero", "carbon", "hydrogen", "electric", "sustainable", "green", "clean", "emissions"],
+    "People Experience": ["passenger", "customer", "accessibility", "safety", "workforce", "skills", "diversity", "user experience", "comfort"],
+    "Hubs and Clusters": ["hub", "interchange", "depot", "station", "terminal", "infrastructure", "placemaking", "regeneration"],
+    "Planning and Operation": ["efficiency", "maintenance", "scheduling", "logistics", "operations", "planning", "performance", "reliability"],
+    "Industry": ["supply chain", "manufacturing", "export", "commercialisation", "market", "business model", "investment", "scale-up"]
+  },
+  
+  "challengeTypeKeywords": {
+    "technology_development": ["develop", "prototype", "TRL", "R&D", "innovation", "demonstration", "pilot"],
+    "infrastructure": ["infrastructure", "facility", "depot", "station", "charging", "refuelling", "construction"],
+    "policy_regulatory": ["policy", "regulation", "standard", "certification", "mandate", "legislation", "compliance"],
+    "skills_workforce": ["skills", "training", "workforce", "apprentice", "education", "careers", "talent"],
+    "market_commercial": ["commercial", "business model", "market", "investment", "revenue", "scale-up"],
+    "integration_interoperability": ["integration", "interoperability", "API", "data sharing", "standardisation", "compatibility"],
+    "safety_security": ["safety", "security", "cyber", "resilience", "risk", "protection", "hazard"],
+    "sustainability": ["environmental", "sustainability", "circular", "lifecycle", "biodiversity", "social impact"],
+    "data_digital": ["data", "digital", "platform", "analytics", "digital twin", "IoT", "connectivity"]
+  }
+}

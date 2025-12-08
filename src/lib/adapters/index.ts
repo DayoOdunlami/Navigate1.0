@@ -30,3 +30,8 @@ export {
   buildChallengeSimilarityRelationships,
 } from './relationship-adapter';
 
+export {
+  atlasExtractedChallengeToBaseEntity,
+  atlasExtractedChallengesToBaseEntities,
+} from './atlas-challenge-adapter';
+

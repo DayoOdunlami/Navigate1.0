@@ -22,14 +22,47 @@ import {
   technologiesToBaseEntities,
   projectsToBaseEntities,
   relationshipsToUniversal,
+  atlasExtractedChallengesToBaseEntities,
 } from '@/lib/adapters';
+import { getChallenges as getAtlasChallenges } from '@/lib/atlas/store';
 import type { Challenge } from '@/lib/types';
 
 // ----------------------------------------------------------------------------
 // Atlas (Challenge Intelligence) → BaseEntity / Relationships
 // ----------------------------------------------------------------------------
 
-const atlasEntities: BaseEntity[] = challengesToBaseEntities(challenges);
+// Static challenges from challenges.ts
+const staticAtlasEntities: BaseEntity[] = challengesToBaseEntities(challenges);
+
+// Atlas-extracted challenges will be loaded dynamically via getUnifiedEntities()
+// This allows newly extracted challenges to be included without restarting the server
+let atlasExtractedEntitiesCache: BaseEntity[] | null = null;
+
+async function loadAtlasExtractedEntities(): Promise<BaseEntity[]> {
+  if (atlasExtractedEntitiesCache !== null) {
+    return atlasExtractedEntitiesCache;
+  }
+  
+  try {
+    const atlasChallenges = await getAtlasChallenges();
+    atlasExtractedEntitiesCache = atlasExtractedChallengesToBaseEntities(atlasChallenges);
+    return atlasExtractedEntitiesCache;
+  } catch (error) {
+    // Store might not be initialized yet, that's okay
+    console.warn('Could not load Atlas-extracted challenges:', error);
+    return [];
+  }
+}
+
+// Function to invalidate cache when new challenges are added
+export function invalidateAtlasCache() {
+  atlasExtractedEntitiesCache = null;
+}
+
+// Combine static and extracted challenges
+// Note: For server-side, we'll load extracted challenges dynamically
+// For client-side, use getUnifiedEntities() function below
+const atlasEntities: BaseEntity[] = staticAtlasEntities;
 
 // Reuse the same similarity logic as the Challenge NetworkGraph so
 // Atlas behaves identically in standalone and unified views.
@@ -149,12 +182,58 @@ function getCPCEntityType(entityId: string, entities: BaseEntity[]): EntityType 
 // Unified exports
 // ----------------------------------------------------------------------------
 
+// Static unified entities (for backward compatibility)
 export const unifiedEntities: BaseEntity[] = [
   ...atlasEntities,
   ...navigateEntities,
   ...cpcSeedEntities,
   ...cpcDomainEntities, // Add CPC domain entities
 ];
+
+// Dynamic function to get unified entities including Atlas-extracted challenges
+export async function getUnifiedEntities(): Promise<BaseEntity[]> {
+  const atlasExtracted = await loadAtlasExtractedEntities();
+  return [
+    ...atlasEntities, // Static challenges
+    ...atlasExtracted, // Dynamically extracted challenges
+    ...navigateEntities,
+    ...cpcSeedEntities,
+    ...cpcDomainEntities,
+  ];
+}
+
+// Function to get unified relationships (can be extended for dynamic relationships)
+export async function getUnifiedRelationships(): Promise<UniversalRelationship[]> {
+  const atlasExtracted = await loadAtlasExtractedEntities();
+  
+  // Convert extracted challenges back to Challenge format for similarity calculation
+  const extractedChallenges: Challenge[] = atlasExtracted
+    .filter(e => e._original && e.domain === 'atlas')
+    .map(e => {
+      // Try to get original Challenge from _original
+      const original = e._original;
+      if (original && 'sector' in original && 'problem_type' in original) {
+        return original as Challenge;
+      }
+      return null;
+    })
+    .filter((c): c is Challenge => c !== null);
+  
+  const allAtlasChallenges = [...challenges, ...extractedChallenges];
+  
+  // Build similarity relationships for all challenges (static + extracted)
+  const allAtlasRelationships = buildAtlasSimilarityRelationships(
+    allAtlasChallenges,
+    0.2
+  );
+  
+  return [
+    ...allAtlasRelationships,
+    ...navigateRelationships,
+    ...cpcSeedRelationships,
+    ...cpcDomainUniversalRelationships,
+  ];
+}
 
 export const unifiedRelationships: UniversalRelationship[] = [
   ...atlasRelationships,
