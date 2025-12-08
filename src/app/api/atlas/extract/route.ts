@@ -5,7 +5,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { extractChallenge } from '@/lib/atlas/extractor';
 import { needsHumanReview } from '@/lib/atlas/validator';
-import { getAIClient, getAvailableProviders, AVAILABLE_MODELS } from '@/lib/atlas/ai-provider';
+import { getAIClient, getAvailableProviders, AVAILABLE_MODELS, type AIProvider } from '@/lib/atlas/ai-provider';
 
 export async function POST(req: NextRequest) {
   let body: { url?: string; provider?: string; model?: string; skipEnrichment?: boolean } | null = null;
@@ -28,10 +28,15 @@ export async function POST(req: NextRequest) {
     
     const { 
       url, 
-      provider = 'openai',  // Default to OpenAI
+      provider: providerInput = 'openai',  // Default to OpenAI
       model,
       skipEnrichment = false 
     } = body;
+    
+    // Validate and cast provider
+    const provider: AIProvider = (providerInput === 'openai' || providerInput === 'anthropic') 
+      ? providerInput 
+      : 'openai';
 
     if (!url) {
       return NextResponse.json(
