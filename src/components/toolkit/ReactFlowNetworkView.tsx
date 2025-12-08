@@ -196,7 +196,6 @@ function NetworkFlowContent({
       nodeTypes={nodeTypes}
       fitView
       fitViewOptions={{ padding: 0.2 }}
-      connectionMode="loose"
       defaultEdgeOptions={{
         type: 'smoothstep',
         animated: true,
@@ -213,8 +212,8 @@ function NetworkFlowContent({
       <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
       <Controls />
       <MiniMap
-        nodeColor={(node) => {
-          return node.data?.color || '#6b7280';
+        nodeColor={(node: Node) => {
+          return (node.data?.color as string) || '#6b7280';
         }}
         maskColor="rgba(0, 0, 0, 0.1)"
         pannable
